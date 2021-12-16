@@ -1,0 +1,2277 @@
+<!DOCTYPE html><html><head><style>
+<!-- <!DOCTYPE html><html><head><style> -->
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body{
+  color:#444;
+  font-family:Georgia, Palatino, 'Palatino Linotype', Times,
+              'Times New Roman', serif,
+              "Hiragino Sans GB", "STXihei", "微软雅黑";
+  font-size:12px;
+  line-height:1.5em;
+  background:#fefefe;
+  width: 65em;
+  margin: 80px auto;
+  padding: 5em 5em;
+  outline: 1300px solid #FAFAFA;
+  background-image:url('img/ampedsoftware.bmp');
+  background-repeat: no-repeat;
+  background-position: 800px 100px;
+}
+
+a{ color: #0645ad; text-decoration:none;}
+a:visited{ color: #0b0080; }
+a:hover{ color: #06e; }
+a:active{ color:#faa700; }
+a:focus{ outline: thin dotted; }
+a:hover, a:active{ outline: 0; }
+
+span.backtick {
+  border:1px solid #EAEAEA;
+  border-radius:3px;
+  background:#F8F8F8;
+  padding:0px 3px 0px 3px;
+}
+
+::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+::selection{background:rgba(255,255,0,0.3);color:#000}
+
+a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+
+p{
+margin:1em 0;
+}
+
+img{
+max-width:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+font-weight:normal;
+color:#111;
+line-height:1em;
+}
+h4,h5,h6{ font-weight: bold; }
+h1{ font-size:2.5em; }
+h2{ font-size:2em; word-wrap:break-word;}
+h3{ font-size:1.5em; }
+h4{ font-size:1.2em; }
+h5{ font-size:1em; }
+h6{ font-size:0.9em; }
+
+blockquote{
+color:#666666;
+margin:0;
+padding-left: 3em;
+border-left: 0.5em #EEE solid;
+}
+hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
+
+
+pre , code, kbd, samp {
+  color: #000;
+  font-family: monospace;
+  font-size: 0.88em;
+  border-radius:3px;
+  background-color: #F8F8F8;
+  border: 1px solid #CCC;
+}
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 5px;}
+pre code { border: 0px !important; }
+
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
+li p:last-child { margin:0 }
+dd { margin: 0 0 0 2em; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; width: auto; }
+
+table {border-collapse: collapse; border-spacing: 0;
+ word-wrap: break-word; word-break: break-all;}
+td { vertical-align: top; word-wrap: break-word; max-width: 350px; }
+table pre {   color: #000;
+  font-family: monospace;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #FFF;
+  border: none;
+}
+
+table.Info {
+	font-size:125%;
+	word-break:break-word;
+}
+
+@media only screen and (min-width: 480px) {
+body{font-size:14px;}
+}
+
+@media only screen and (min-width: 768px) {
+body{font-size:16px;}
+}
+
+@media print {
+  #* { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
+  * {color: black !important; filter:none !important; -ms-filter: none !important; }
+  body{font-size:12pt; max-width:100%;}
+  a, a:visited { text-decoration: underline; }
+  hr { height: 1px; border:0; border-bottom:1px solid black; }
+  #a[href]:after { content: " (" attr(href) ")"; }
+  #abbr[title]:after { content: " (" attr(title) ")"; }
+  .myButton, .myButton * {display: none !important;}
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; padding-right: 1em; page-break-inside: avoid; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page :left { margin: 15mm 20mm 15mm 10mm; }
+  @page :right { margin: 15mm 10mm 15mm 20mm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0));
+	background:-moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0',GradientType=0);
+	background-color:#3d94f6;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+  margin: 10px;
+  float:right;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6));
+	background:-moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:-webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:-o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:-ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6',GradientType=0);
+	background-color:#1e62d0;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.container
+{
+    // ... *snip*
+    overflow: hidden;
+}
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  /*background-image: linear-gradient(to bottom, #3c3c3c 0%, #222 100%);*/
+  background-color: transparent
+  background-repeat: repeat-x;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+  min-height: 60px;
+margin-bottom: 20px;
+border: 1px solid transparent;
+}
+.navbar-brand {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+  color: #9d9d9d;
+  top: 10px;
+  left: 10px;
+  position:relative;
+  height: 50px;
+  padding-top: 15px;
+  font-size: 18px;
+  line-height: 10px;
+
+  background-color: transparent;
+
+}
+
+.overviewtable td{vertical-align: bottom;}
+.rffaTable .CatProp{background-color:#ecf4ff;color:#000000;border-color:inherit;}
+.rffaTable .CatMeta{background-color:#FEFEB8;color:#000000;border-color:inherit;}
+.rffaTable .CatJpeg{background-color:#dbffb0;color:#000000;border-color:inherit;}
+.rffaTable .subth{font-weight:normal; font-style:italic;}
+.rlaTable .filterName{font-weight:bold; text-align:center;}
+.rlaTable .filterNameWarning{font-weight:bold; text-align:center; color:#FF0000}
+.rlaTable .filterParams{font-weight:bold; text-align:center;}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 360px;
+    background-color: #333333;
+    color: #fff;
+    text-align: justify;
+    border-radius: 6px;
+    padding: 5px 5px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.CatProp:hover .tooltiptext {
+    visibility: visible;
+}
+.CatMeta:hover .tooltiptext {
+    visibility: visible;
+}
+.CatJpeg:hover .tooltiptext {
+    visibility: visible;
+}
+
+.VisInsp:hover .tooltiptext {
+    visibility: visible;
+}
+
+.filterOutput:hover .tooltiptext {
+    visibility: visible;
+}
+
+.SummaryTable:hover .tooltiptext {
+    visibility: visible;
+}
+
+.SummaryTable .overviewtable img
+{
+	width:11em;
+}
+
+.summaryPreamble {
+	margin-bottom: 1em;
+	padding: 1em;
+	border:1px dashed black;
+	font-weight: bold;	
+}
+
+.summaryPreamble img{
+	height:3rem;
+	padding-right: 1em;
+}
+
+.summaryPreamble .preambleGreen a{
+	color:#2a9310;
+}	
+
+.summaryPreamble .preambleYellow a{
+	color:#f2c204;
+}	
+
+.summaryPreamble .preambleRed a{
+	color:#bc0909;
+}
+
+.summaryPreamble .preambleGray a{
+	color:#666666;
+}	
+
+.projectReportComment {
+  width: 85%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #666666;
+  padding: 15px; 
+}
+
+.projectReportComment.unset
+{
+	  background: #eeeeee;
+}
+
+.projectReportComment.ok{
+  background: rgba(0, 255, 0, 0.5);
+}
+
+.projectReportComment.tocheck{
+  background: rgba(255, 255, 0, 0.5);;
+}
+
+.projectReportComment.warning{
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.projectReportToc li {
+	padding-left: 1em;
+}
+
+.projectReportToc .icon {
+  float: left;
+  width: 0.8em;
+  height: 0.8em;
+  margin-top: 0.3em;
+  margin-right: 0.3em;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.projectReportToc .icon.warning {
+  background: #D3470F;
+}
+
+.projectReportTocIcon.folder {
+  background: #FFFFFF;
+}
+
+.projectReportToc .icon.tocheck {
+  background: #F3DE1A;
+}
+
+.projectReportToc .icon.ok {
+  background: #82D30F;
+}
+
+.projectReportToc .icon.unset {
+  background: #858585;
+}
+
+#.projectReportToc .text {
+#  margin-left: 0.5em;
+#}
+
+.projectReportToc .text.folder {
+  font-weight: bold;
+}
+
+.projectReportToc .link {
+	color: #000000;
+}
+
+.projectReportToc .link:visited {
+	color: #000000;
+}
+
+.projectReportToc .link:hover {
+	color: #0000FF;
+}
+</style><meta charset="utf-8"></head><body><body onkeypress="keyEvent()">
+<nav class="fixed-nav-bar">
+    <a class="navbar-brand" href="#"></a>
+      <!-- <img src="ampedsoftware.png" alt="Amped Software Logo"></img> -->
+    <script language="JavaScript">
+      var cur = 0;
+      function goToPrev()
+      {
+          cur--;
+          if (cur < 0)
+          {
+              window.location = '#'; 
+              cur = 0;
+            }else {
+              window.location = '#anchor' + cur;
+            }
+
+      }
+
+      function goToNext()
+      {
+          cur++;
+          if (cur > 78)
+              cur = 78;
+          window.location = '#anchor' + cur;
+        }
+
+        function keyEvent()
+        {
+          var key = event.keyCode;
+              if (key == 106)
+                goToPrev();
+              if (key == 107)
+                goToNext();
+        }
+</script>
+<button class="myButton"; onclick="goToNext()">  &raquo; <small>(K)</small> </button>
+<button class="myButton"; onclick="goToPrev()"> <small>(J)</small> &laquo; </button>
+</nav>
+</body>
+<h1>Amped Authenticate Smart Report</h1>
+<hr>
+Report Generation: 2021-04-24 11:49:54<br>
+Program Version Info: <br>
+Build date: 20201216<br>
+Revision: 19348<br>
+Platform: Microsoft Windows, 64 bit<br>
+<hr>
+<h3><a name="anchor0">Summary Table</a></h3>
+<div class="SummaryTable"><div class="summaryPreamble">
+Total number of processed images: 14<br>
+<div class="preambleGreen"><img src="green.png"><a href="#summaryTable_0">Images that are likely to be camera original: 0</a></div>
+<div class="preambleYellow"><img src="yellow.png"><a href="#summaryTable_1">Images with suspicious metadata but no traces of forgery: 13</a></div>
+<div class="preambleRed"><img src="red.png"><a href="#summaryTable_2">Images with traces of possible forgery: 1</a></div>
+</div>
+<h4><a name="summaryTable_1">Images with suspicious metadata but no traces of forgery</a></h4>
+<table class="overviewtable" border="1px"><tr>
+<td><a href="#anchor1"> <img src="ab6c9833226_yellow-Visual Inspection-255-127-0.png" width ="600"><br>
+<img src="yellow.png" width ="300"> </a>
+</td>
+<td><a href="#anchor2"> <img src="ab6c9833226_red-Visual Inspection-255-127-0.png" width ="600"><br>
+<img src="yellow.png" width ="300"> </a>
+</td>
+<td><a href="#anchor3"> <img src="ab6c9833226_green-Visual Inspection-255-127-0.png" width ="600"><br>
+<img src="yellow.png" width ="300"> </a>
+</td>
+<td><a href="#anchor4"> <img src="ba067c676ef_yellow-Visual Inspection-255-127-0.png" width ="600"><br>
+<img src="yellow.png" width ="300"> </a>
+</td>
+</tr>
+<tr>
+<td><a href="#anchor5"> <img src="ba067c676ef_red-Visual Inspection-255-127-0.png" width ="600"><br>
+<img src="yellow.png" width ="300"> </a>
+</td>
+<td><a href="#anchor6"> <img src="ba067c676ef_green-Visual Inspection-255-127-0.png" width ="600"><br>
+<img src="yellow.png" width ="300"> </a>
+</td>
+<td><a href="#anchor7"> <img src="ba067c676ef_DSC_0023-Visual Inspection-255-127-0-Visual Inspection-255-127-0.png" width ="600"><br>
+<img src="yellow.png" width ="300"> </a>
+</td>
+<td><a href="#anchor8"> <img src="ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-Visual Inspection-255-127-0.png" width ="600"><br>
+<img src="yellow.png" width ="300"> </a>
+</td>
+</tr>
+<tr>
+<td><a href="#anchor9"> <img src="ba067c676ef_DSC_0023-ELA-MSE-90-0-Visual Inspection-255-127-0.png" width ="600"><br>
+<img src="yellow.png" width ="300"> </a>
+</td>
+<td><a href="#anchor10"> <img src="ba067c676ef_DSC_0023-ELA-MSE-75-0-Visual Inspection-255-127-0.png" width ="600"><br>
+<img src="yellow.png" width ="300"> </a>
+</td>
+<td><a href="#anchor11"> <img src="ba067c676ef_DSC_0023-Correlation Map-Predictive-0-Visual Inspection-255-127-0.png" width ="600"><br>
+<img src="yellow.png" width ="300"> </a>
+</td>
+<td><a href="#anchor12"> <img src="ba067c676ef_DSC_0023-Clones Keypoints-Brisk-Visual Inspection-255-127-0.png" width ="600"><br>
+<img src="yellow.png" width ="300"> </a>
+</td>
+</tr>
+<tr>
+<td><a href="#anchor13"> <img src="ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-Visual Inspection-255-127-0.png" width ="600"><br>
+<img src="yellow.png" width ="300"> </a>
+</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+</table><br>
+
+<h4><a name="summaryTable_2">Images with traces of possible forgery</a></h4>
+<table class="overviewtable" border="1px"><tr>
+<td><a href="#anchor14"> <img src="DSC_0023-Visual Inspection-255-127-0.png" width ="600"><br>
+<img src="red.png" width ="300"> </a>
+</td>
+</tr>
+</table><br>
+
+<span class="tooltiptext">Click on an image thumbnail to go to the detailed report for that image.</span></div>
+<h2><a name="anchor1">File 0: report\yellow.png</a></h2>
+<table border="1">	<tr>
+		<td class="VisInsp"><a href = "ab6c9833226_yellow-Visual Inspection-255-127-0.png" target = "_blank"><img src="ab6c9833226_yellow-Visual Inspection-255-127-0.png" width ="600"></a><span class="tooltiptext">Visual inspecting the image may reveal inconsistencies in lights, shadows, proportions. Also consider possible inconsistencies at the context level (objects that could not be there, image content inconsistent with information available in metadata, etc.). Click on the image to view it in a separate tab.</span></td>
+		<td><img src="yellow.png" width ="300"></td>
+	</tr></table><h3>Brief File Format Analysis <span style="color:red">- WARNING! -</span>
+</h3>
+<table border="1" class="rffaTable">
+	<tr><th class ="CatProp" colspan = "4">Image Properties</th></tr>
+	<tr>
+		<th class ="CatProp subth">Id</th>
+		<th class ="CatProp subth">Name</th>
+		<th class ="CatProp subth">Value</th>
+		<th class ="CatProp subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatProp">0</td>
+		<td class ="CatProp">Format <span class="tooltiptext">The format used to store the image to file. Most cameras/smartphones produce either files in the JPEG format or in proprietary RAW format (for example ARW, CRW, DCR, NEF, ORF, X3F). Formats like PNG, BMP, GIF are less common for camera original images and may suggest software processing.</span></td>
+		<td class ="CatProp">PNG</td>
+		<td style="color:red" class ="CatProp">Format is not a standard one<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">1</td>
+		<td class ="CatProp">Image Encoded Size <span class="tooltiptext">This is the resolution (height and width in pixels) of the image as it is stored on the computer.</span></td>
+		<td class ="CatProp">[418,210]</td>
+		<td style="color:red" class ="CatProp">Resolution is low<br>Odd width<br>Odd height<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">2</td>
+		<td class ="CatProp">Aspect Ratio <span class="tooltiptext">The value you obtain dividing image width in pixels by image height in pixel (or viceversa: the larger one is always divided by the smaller one).</span></td>
+		<td class ="CatProp">1.99</td>
+		<td style="color:red" class ="CatProp">Odd aspect ratio<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">3</td>
+		<td class ="CatProp">Thumbnail Size <span class="tooltiptext">Thumbnail is a small image caption stored inside the image file. This value tells the resolution (height and width in pixels) of the Thumbnail. Absence of thumbnail is very uncommon for camera original images.</span></td>
+		<td class ="CatProp">[0,0]</td>
+		<td style="color:red" class ="CatProp">Thumbnail is missing<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">4</td>
+		<td class ="CatProp">MD5 <span class="tooltiptext">The MD5 hash value of the file, useful to know if the file is identical to another file (they must have identical hash values).</span></td>
+		<td class ="CatProp">cff2fd1c335309adea5333f25741e185</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr><th class ="CatMeta" colspan = "4">Image Metadata</th></tr>
+	<tr>
+		<th class ="CatMeta subth">Id</th>
+		<th class ="CatMeta subth">Name</th>
+		<th class ="CatMeta subth">Value</th>
+		<th class ="CatMeta subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatMeta">5</td>
+		<td class ="CatMeta">Number of Exif fields <span class="tooltiptext">Total number of Exif metadata contained in the image header. Presence of Exif metadata is normal and expected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">6</td>
+		<td class ="CatMeta">Number of Photoshop fields <span class="tooltiptext">Total number of Adobe Photoshop metadata contained in the image header. Presence of Photoshop metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">7</td>
+		<td class ="CatMeta">Number of XMP fields <span class="tooltiptext">Total number of Adobe XMP metadata contained in the image header. Presence of Adobe XMP metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+</table>
+
+<h3>Brief Local Analysis</h3><table border="1" class="rlaTable">
+	<tr>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ab6c9833226_yellow-ELA-MSE-75-0.png" target = "_blank"><img src="ab6c9833226_yellow-ELA-MSE-75-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-75</div>
+		</td>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ab6c9833226_yellow-ELA-MSE-90-0.png" target = "_blank"><img src="ab6c9833226_yellow-ELA-MSE-90-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-90</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_yellow-DCT Map-Y-30-63-0.png" target = "_blank"><img src="ab6c9833226_yellow-DCT Map-Y-30-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-30-63</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_yellow-DCT Map-Y-1-63-0.png" target = "_blank"><img src="ab6c9833226_yellow-DCT Map-Y-1-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-1-63</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">JPEG Dimples Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_yellow-JPEG Dimples Map-Auto-Color-Off.png" target = "_blank"><img src="ab6c9833226_yellow-JPEG Dimples Map-Auto-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto</div>
+		</td>
+		<td>
+			<div class="filterName">JPEG Ghosts Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_yellow-JPEG Ghosts Map-Auto-Yes-Color-Off.png" target = "_blank"><img src="ab6c9833226_yellow-JPEG Ghosts Map-Auto-Yes-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto-Yes</div>
+		</td>
+		<td>
+			<div class="filterName">Correlation Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_yellow-Correlation Map-Predictive-0.png" target = "_blank"><img src="ab6c9833226_yellow-Correlation Map-Predictive-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Predictive</div>
+		</td>
+		<td>
+			<div class="filterName">Noise Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_yellow-Noise Map-4-8-0.png" target = "_blank"><img src="ab6c9833226_yellow-Noise Map-4-8-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">4-8</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">Clones Keypoints</div>
+			<div class="filterOutput"><a href = "ab6c9833226_yellow-Clones Keypoints-Brisk.png" target = "_blank"><img src="ab6c9833226_yellow-Clones Keypoints-Brisk.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Brisk</div>
+		</td>
+   	</tr>
+</table>
+
+<h2><a name="anchor2">File 1: report\red.png</a></h2>
+<table border="1">	<tr>
+		<td class="VisInsp"><a href = "ab6c9833226_red-Visual Inspection-255-127-0.png" target = "_blank"><img src="ab6c9833226_red-Visual Inspection-255-127-0.png" width ="600"></a><span class="tooltiptext">Visual inspecting the image may reveal inconsistencies in lights, shadows, proportions. Also consider possible inconsistencies at the context level (objects that could not be there, image content inconsistent with information available in metadata, etc.). Click on the image to view it in a separate tab.</span></td>
+		<td><img src="yellow.png" width ="300"></td>
+	</tr></table><h3>Brief File Format Analysis <span style="color:red">- WARNING! -</span>
+</h3>
+<table border="1" class="rffaTable">
+	<tr><th class ="CatProp" colspan = "4">Image Properties</th></tr>
+	<tr>
+		<th class ="CatProp subth">Id</th>
+		<th class ="CatProp subth">Name</th>
+		<th class ="CatProp subth">Value</th>
+		<th class ="CatProp subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatProp">0</td>
+		<td class ="CatProp">Format <span class="tooltiptext">The format used to store the image to file. Most cameras/smartphones produce either files in the JPEG format or in proprietary RAW format (for example ARW, CRW, DCR, NEF, ORF, X3F). Formats like PNG, BMP, GIF are less common for camera original images and may suggest software processing.</span></td>
+		<td class ="CatProp">PNG</td>
+		<td style="color:red" class ="CatProp">Format is not a standard one<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">1</td>
+		<td class ="CatProp">Image Encoded Size <span class="tooltiptext">This is the resolution (height and width in pixels) of the image as it is stored on the computer.</span></td>
+		<td class ="CatProp">[418,209]</td>
+		<td style="color:red" class ="CatProp">Resolution is low<br>Odd width<br>Odd height<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">2</td>
+		<td class ="CatProp">Aspect Ratio <span class="tooltiptext">The value you obtain dividing image width in pixels by image height in pixel (or viceversa: the larger one is always divided by the smaller one).</span></td>
+		<td class ="CatProp">2.00</td>
+		<td style="color:red" class ="CatProp">Odd aspect ratio<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">3</td>
+		<td class ="CatProp">Thumbnail Size <span class="tooltiptext">Thumbnail is a small image caption stored inside the image file. This value tells the resolution (height and width in pixels) of the Thumbnail. Absence of thumbnail is very uncommon for camera original images.</span></td>
+		<td class ="CatProp">[0,0]</td>
+		<td style="color:red" class ="CatProp">Thumbnail is missing<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">4</td>
+		<td class ="CatProp">MD5 <span class="tooltiptext">The MD5 hash value of the file, useful to know if the file is identical to another file (they must have identical hash values).</span></td>
+		<td class ="CatProp">a6132c9c51abbb0f2feea6cdf5df8472</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr><th class ="CatMeta" colspan = "4">Image Metadata</th></tr>
+	<tr>
+		<th class ="CatMeta subth">Id</th>
+		<th class ="CatMeta subth">Name</th>
+		<th class ="CatMeta subth">Value</th>
+		<th class ="CatMeta subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatMeta">5</td>
+		<td class ="CatMeta">Number of Exif fields <span class="tooltiptext">Total number of Exif metadata contained in the image header. Presence of Exif metadata is normal and expected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">6</td>
+		<td class ="CatMeta">Number of Photoshop fields <span class="tooltiptext">Total number of Adobe Photoshop metadata contained in the image header. Presence of Photoshop metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">7</td>
+		<td class ="CatMeta">Number of XMP fields <span class="tooltiptext">Total number of Adobe XMP metadata contained in the image header. Presence of Adobe XMP metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+</table>
+
+<h3>Brief Local Analysis</h3><table border="1" class="rlaTable">
+	<tr>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ab6c9833226_red-ELA-MSE-75-0.png" target = "_blank"><img src="ab6c9833226_red-ELA-MSE-75-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-75</div>
+		</td>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ab6c9833226_red-ELA-MSE-90-0.png" target = "_blank"><img src="ab6c9833226_red-ELA-MSE-90-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-90</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_red-DCT Map-Y-30-63-0.png" target = "_blank"><img src="ab6c9833226_red-DCT Map-Y-30-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-30-63</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_red-DCT Map-Y-1-63-0.png" target = "_blank"><img src="ab6c9833226_red-DCT Map-Y-1-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-1-63</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">JPEG Dimples Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_red-JPEG Dimples Map-Auto-Color-Off.png" target = "_blank"><img src="ab6c9833226_red-JPEG Dimples Map-Auto-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto</div>
+		</td>
+		<td>
+			<div class="filterName">JPEG Ghosts Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_red-JPEG Ghosts Map-Auto-Yes-Color-Off.png" target = "_blank"><img src="ab6c9833226_red-JPEG Ghosts Map-Auto-Yes-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto-Yes</div>
+		</td>
+		<td>
+			<div class="filterName">Correlation Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_red-Correlation Map-Predictive-0.png" target = "_blank"><img src="ab6c9833226_red-Correlation Map-Predictive-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Predictive</div>
+		</td>
+		<td>
+			<div class="filterName">Noise Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_red-Noise Map-4-8-0.png" target = "_blank"><img src="ab6c9833226_red-Noise Map-4-8-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">4-8</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">Clones Keypoints</div>
+			<div class="filterOutput"><a href = "ab6c9833226_red-Clones Keypoints-Brisk.png" target = "_blank"><img src="ab6c9833226_red-Clones Keypoints-Brisk.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Brisk</div>
+		</td>
+   	</tr>
+</table>
+
+<h2><a name="anchor3">File 2: report\green.png</a></h2>
+<table border="1">	<tr>
+		<td class="VisInsp"><a href = "ab6c9833226_green-Visual Inspection-255-127-0.png" target = "_blank"><img src="ab6c9833226_green-Visual Inspection-255-127-0.png" width ="600"></a><span class="tooltiptext">Visual inspecting the image may reveal inconsistencies in lights, shadows, proportions. Also consider possible inconsistencies at the context level (objects that could not be there, image content inconsistent with information available in metadata, etc.). Click on the image to view it in a separate tab.</span></td>
+		<td><img src="yellow.png" width ="300"></td>
+	</tr></table><h3>Brief File Format Analysis <span style="color:red">- WARNING! -</span>
+</h3>
+<table border="1" class="rffaTable">
+	<tr><th class ="CatProp" colspan = "4">Image Properties</th></tr>
+	<tr>
+		<th class ="CatProp subth">Id</th>
+		<th class ="CatProp subth">Name</th>
+		<th class ="CatProp subth">Value</th>
+		<th class ="CatProp subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatProp">0</td>
+		<td class ="CatProp">Format <span class="tooltiptext">The format used to store the image to file. Most cameras/smartphones produce either files in the JPEG format or in proprietary RAW format (for example ARW, CRW, DCR, NEF, ORF, X3F). Formats like PNG, BMP, GIF are less common for camera original images and may suggest software processing.</span></td>
+		<td class ="CatProp">PNG</td>
+		<td style="color:red" class ="CatProp">Format is not a standard one<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">1</td>
+		<td class ="CatProp">Image Encoded Size <span class="tooltiptext">This is the resolution (height and width in pixels) of the image as it is stored on the computer.</span></td>
+		<td class ="CatProp">[418,209]</td>
+		<td style="color:red" class ="CatProp">Resolution is low<br>Odd width<br>Odd height<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">2</td>
+		<td class ="CatProp">Aspect Ratio <span class="tooltiptext">The value you obtain dividing image width in pixels by image height in pixel (or viceversa: the larger one is always divided by the smaller one).</span></td>
+		<td class ="CatProp">2.00</td>
+		<td style="color:red" class ="CatProp">Odd aspect ratio<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">3</td>
+		<td class ="CatProp">Thumbnail Size <span class="tooltiptext">Thumbnail is a small image caption stored inside the image file. This value tells the resolution (height and width in pixels) of the Thumbnail. Absence of thumbnail is very uncommon for camera original images.</span></td>
+		<td class ="CatProp">[0,0]</td>
+		<td style="color:red" class ="CatProp">Thumbnail is missing<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">4</td>
+		<td class ="CatProp">MD5 <span class="tooltiptext">The MD5 hash value of the file, useful to know if the file is identical to another file (they must have identical hash values).</span></td>
+		<td class ="CatProp">3916a6d16051b2e5599fe78d44e49abb</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr><th class ="CatMeta" colspan = "4">Image Metadata</th></tr>
+	<tr>
+		<th class ="CatMeta subth">Id</th>
+		<th class ="CatMeta subth">Name</th>
+		<th class ="CatMeta subth">Value</th>
+		<th class ="CatMeta subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatMeta">5</td>
+		<td class ="CatMeta">Number of Exif fields <span class="tooltiptext">Total number of Exif metadata contained in the image header. Presence of Exif metadata is normal and expected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">6</td>
+		<td class ="CatMeta">Number of Photoshop fields <span class="tooltiptext">Total number of Adobe Photoshop metadata contained in the image header. Presence of Photoshop metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">7</td>
+		<td class ="CatMeta">Number of XMP fields <span class="tooltiptext">Total number of Adobe XMP metadata contained in the image header. Presence of Adobe XMP metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+</table>
+
+<h3>Brief Local Analysis</h3><table border="1" class="rlaTable">
+	<tr>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ab6c9833226_green-ELA-MSE-75-0.png" target = "_blank"><img src="ab6c9833226_green-ELA-MSE-75-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-75</div>
+		</td>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ab6c9833226_green-ELA-MSE-90-0.png" target = "_blank"><img src="ab6c9833226_green-ELA-MSE-90-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-90</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_green-DCT Map-Y-30-63-0.png" target = "_blank"><img src="ab6c9833226_green-DCT Map-Y-30-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-30-63</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_green-DCT Map-Y-1-63-0.png" target = "_blank"><img src="ab6c9833226_green-DCT Map-Y-1-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-1-63</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">JPEG Dimples Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_green-JPEG Dimples Map-Auto-Color-Off.png" target = "_blank"><img src="ab6c9833226_green-JPEG Dimples Map-Auto-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto</div>
+		</td>
+		<td>
+			<div class="filterName">JPEG Ghosts Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_green-JPEG Ghosts Map-Auto-Yes-Color-Off.png" target = "_blank"><img src="ab6c9833226_green-JPEG Ghosts Map-Auto-Yes-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto-Yes</div>
+		</td>
+		<td>
+			<div class="filterName">Correlation Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_green-Correlation Map-Predictive-0.png" target = "_blank"><img src="ab6c9833226_green-Correlation Map-Predictive-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Predictive</div>
+		</td>
+		<td>
+			<div class="filterName">Noise Map</div>
+			<div class="filterOutput"><a href = "ab6c9833226_green-Noise Map-4-8-0.png" target = "_blank"><img src="ab6c9833226_green-Noise Map-4-8-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">4-8</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">Clones Keypoints</div>
+			<div class="filterOutput"><a href = "ab6c9833226_green-Clones Keypoints-Brisk.png" target = "_blank"><img src="ab6c9833226_green-Clones Keypoints-Brisk.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Brisk</div>
+		</td>
+   	</tr>
+</table>
+
+<h2><a name="anchor4">File 3: report\1cd306312de\yellow.png</a></h2>
+<table border="1">	<tr>
+		<td class="VisInsp"><a href = "ba067c676ef_yellow-Visual Inspection-255-127-0.png" target = "_blank"><img src="ba067c676ef_yellow-Visual Inspection-255-127-0.png" width ="600"></a><span class="tooltiptext">Visual inspecting the image may reveal inconsistencies in lights, shadows, proportions. Also consider possible inconsistencies at the context level (objects that could not be there, image content inconsistent with information available in metadata, etc.). Click on the image to view it in a separate tab.</span></td>
+		<td><img src="yellow.png" width ="300"></td>
+	</tr></table><h3>Brief File Format Analysis <span style="color:red">- WARNING! -</span>
+</h3>
+<table border="1" class="rffaTable">
+	<tr><th class ="CatProp" colspan = "4">Image Properties</th></tr>
+	<tr>
+		<th class ="CatProp subth">Id</th>
+		<th class ="CatProp subth">Name</th>
+		<th class ="CatProp subth">Value</th>
+		<th class ="CatProp subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatProp">0</td>
+		<td class ="CatProp">Format <span class="tooltiptext">The format used to store the image to file. Most cameras/smartphones produce either files in the JPEG format or in proprietary RAW format (for example ARW, CRW, DCR, NEF, ORF, X3F). Formats like PNG, BMP, GIF are less common for camera original images and may suggest software processing.</span></td>
+		<td class ="CatProp">PNG</td>
+		<td style="color:red" class ="CatProp">Format is not a standard one<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">1</td>
+		<td class ="CatProp">Image Encoded Size <span class="tooltiptext">This is the resolution (height and width in pixels) of the image as it is stored on the computer.</span></td>
+		<td class ="CatProp">[418,210]</td>
+		<td style="color:red" class ="CatProp">Resolution is low<br>Odd width<br>Odd height<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">2</td>
+		<td class ="CatProp">Aspect Ratio <span class="tooltiptext">The value you obtain dividing image width in pixels by image height in pixel (or viceversa: the larger one is always divided by the smaller one).</span></td>
+		<td class ="CatProp">1.99</td>
+		<td style="color:red" class ="CatProp">Odd aspect ratio<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">3</td>
+		<td class ="CatProp">Thumbnail Size <span class="tooltiptext">Thumbnail is a small image caption stored inside the image file. This value tells the resolution (height and width in pixels) of the Thumbnail. Absence of thumbnail is very uncommon for camera original images.</span></td>
+		<td class ="CatProp">[0,0]</td>
+		<td style="color:red" class ="CatProp">Thumbnail is missing<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">4</td>
+		<td class ="CatProp">MD5 <span class="tooltiptext">The MD5 hash value of the file, useful to know if the file is identical to another file (they must have identical hash values).</span></td>
+		<td class ="CatProp">cff2fd1c335309adea5333f25741e185</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr><th class ="CatMeta" colspan = "4">Image Metadata</th></tr>
+	<tr>
+		<th class ="CatMeta subth">Id</th>
+		<th class ="CatMeta subth">Name</th>
+		<th class ="CatMeta subth">Value</th>
+		<th class ="CatMeta subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatMeta">5</td>
+		<td class ="CatMeta">Number of Exif fields <span class="tooltiptext">Total number of Exif metadata contained in the image header. Presence of Exif metadata is normal and expected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">6</td>
+		<td class ="CatMeta">Number of Photoshop fields <span class="tooltiptext">Total number of Adobe Photoshop metadata contained in the image header. Presence of Photoshop metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">7</td>
+		<td class ="CatMeta">Number of XMP fields <span class="tooltiptext">Total number of Adobe XMP metadata contained in the image header. Presence of Adobe XMP metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+</table>
+
+<h3>Brief Local Analysis</h3><table border="1" class="rlaTable">
+	<tr>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_yellow-ELA-MSE-75-0.png" target = "_blank"><img src="ba067c676ef_yellow-ELA-MSE-75-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-75</div>
+		</td>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_yellow-ELA-MSE-90-0.png" target = "_blank"><img src="ba067c676ef_yellow-ELA-MSE-90-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-90</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_yellow-DCT Map-Y-30-63-0.png" target = "_blank"><img src="ba067c676ef_yellow-DCT Map-Y-30-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-30-63</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_yellow-DCT Map-Y-1-63-0.png" target = "_blank"><img src="ba067c676ef_yellow-DCT Map-Y-1-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-1-63</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">JPEG Dimples Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_yellow-JPEG Dimples Map-Auto-Color-Off.png" target = "_blank"><img src="ba067c676ef_yellow-JPEG Dimples Map-Auto-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto</div>
+		</td>
+		<td>
+			<div class="filterName">JPEG Ghosts Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_yellow-JPEG Ghosts Map-Auto-Yes-Color-Off.png" target = "_blank"><img src="ba067c676ef_yellow-JPEG Ghosts Map-Auto-Yes-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto-Yes</div>
+		</td>
+		<td>
+			<div class="filterName">Correlation Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_yellow-Correlation Map-Predictive-0.png" target = "_blank"><img src="ba067c676ef_yellow-Correlation Map-Predictive-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Predictive</div>
+		</td>
+		<td>
+			<div class="filterName">Noise Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_yellow-Noise Map-4-8-0.png" target = "_blank"><img src="ba067c676ef_yellow-Noise Map-4-8-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">4-8</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">Clones Keypoints</div>
+			<div class="filterOutput"><a href = "ba067c676ef_yellow-Clones Keypoints-Brisk.png" target = "_blank"><img src="ba067c676ef_yellow-Clones Keypoints-Brisk.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Brisk</div>
+		</td>
+   	</tr>
+</table>
+
+<h2><a name="anchor5">File 4: report\1cd306312de\red.png</a></h2>
+<table border="1">	<tr>
+		<td class="VisInsp"><a href = "ba067c676ef_red-Visual Inspection-255-127-0.png" target = "_blank"><img src="ba067c676ef_red-Visual Inspection-255-127-0.png" width ="600"></a><span class="tooltiptext">Visual inspecting the image may reveal inconsistencies in lights, shadows, proportions. Also consider possible inconsistencies at the context level (objects that could not be there, image content inconsistent with information available in metadata, etc.). Click on the image to view it in a separate tab.</span></td>
+		<td><img src="yellow.png" width ="300"></td>
+	</tr></table><h3>Brief File Format Analysis <span style="color:red">- WARNING! -</span>
+</h3>
+<table border="1" class="rffaTable">
+	<tr><th class ="CatProp" colspan = "4">Image Properties</th></tr>
+	<tr>
+		<th class ="CatProp subth">Id</th>
+		<th class ="CatProp subth">Name</th>
+		<th class ="CatProp subth">Value</th>
+		<th class ="CatProp subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatProp">0</td>
+		<td class ="CatProp">Format <span class="tooltiptext">The format used to store the image to file. Most cameras/smartphones produce either files in the JPEG format or in proprietary RAW format (for example ARW, CRW, DCR, NEF, ORF, X3F). Formats like PNG, BMP, GIF are less common for camera original images and may suggest software processing.</span></td>
+		<td class ="CatProp">PNG</td>
+		<td style="color:red" class ="CatProp">Format is not a standard one<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">1</td>
+		<td class ="CatProp">Image Encoded Size <span class="tooltiptext">This is the resolution (height and width in pixels) of the image as it is stored on the computer.</span></td>
+		<td class ="CatProp">[418,209]</td>
+		<td style="color:red" class ="CatProp">Resolution is low<br>Odd width<br>Odd height<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">2</td>
+		<td class ="CatProp">Aspect Ratio <span class="tooltiptext">The value you obtain dividing image width in pixels by image height in pixel (or viceversa: the larger one is always divided by the smaller one).</span></td>
+		<td class ="CatProp">2.00</td>
+		<td style="color:red" class ="CatProp">Odd aspect ratio<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">3</td>
+		<td class ="CatProp">Thumbnail Size <span class="tooltiptext">Thumbnail is a small image caption stored inside the image file. This value tells the resolution (height and width in pixels) of the Thumbnail. Absence of thumbnail is very uncommon for camera original images.</span></td>
+		<td class ="CatProp">[0,0]</td>
+		<td style="color:red" class ="CatProp">Thumbnail is missing<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">4</td>
+		<td class ="CatProp">MD5 <span class="tooltiptext">The MD5 hash value of the file, useful to know if the file is identical to another file (they must have identical hash values).</span></td>
+		<td class ="CatProp">a6132c9c51abbb0f2feea6cdf5df8472</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr><th class ="CatMeta" colspan = "4">Image Metadata</th></tr>
+	<tr>
+		<th class ="CatMeta subth">Id</th>
+		<th class ="CatMeta subth">Name</th>
+		<th class ="CatMeta subth">Value</th>
+		<th class ="CatMeta subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatMeta">5</td>
+		<td class ="CatMeta">Number of Exif fields <span class="tooltiptext">Total number of Exif metadata contained in the image header. Presence of Exif metadata is normal and expected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">6</td>
+		<td class ="CatMeta">Number of Photoshop fields <span class="tooltiptext">Total number of Adobe Photoshop metadata contained in the image header. Presence of Photoshop metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">7</td>
+		<td class ="CatMeta">Number of XMP fields <span class="tooltiptext">Total number of Adobe XMP metadata contained in the image header. Presence of Adobe XMP metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+</table>
+
+<h3>Brief Local Analysis</h3><table border="1" class="rlaTable">
+	<tr>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_red-ELA-MSE-75-0.png" target = "_blank"><img src="ba067c676ef_red-ELA-MSE-75-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-75</div>
+		</td>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_red-ELA-MSE-90-0.png" target = "_blank"><img src="ba067c676ef_red-ELA-MSE-90-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-90</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_red-DCT Map-Y-30-63-0.png" target = "_blank"><img src="ba067c676ef_red-DCT Map-Y-30-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-30-63</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_red-DCT Map-Y-1-63-0.png" target = "_blank"><img src="ba067c676ef_red-DCT Map-Y-1-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-1-63</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">JPEG Dimples Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_red-JPEG Dimples Map-Auto-Color-Off.png" target = "_blank"><img src="ba067c676ef_red-JPEG Dimples Map-Auto-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto</div>
+		</td>
+		<td>
+			<div class="filterName">JPEG Ghosts Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_red-JPEG Ghosts Map-Auto-Yes-Color-Off.png" target = "_blank"><img src="ba067c676ef_red-JPEG Ghosts Map-Auto-Yes-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto-Yes</div>
+		</td>
+		<td>
+			<div class="filterName">Correlation Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_red-Correlation Map-Predictive-0.png" target = "_blank"><img src="ba067c676ef_red-Correlation Map-Predictive-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Predictive</div>
+		</td>
+		<td>
+			<div class="filterName">Noise Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_red-Noise Map-4-8-0.png" target = "_blank"><img src="ba067c676ef_red-Noise Map-4-8-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">4-8</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">Clones Keypoints</div>
+			<div class="filterOutput"><a href = "ba067c676ef_red-Clones Keypoints-Brisk.png" target = "_blank"><img src="ba067c676ef_red-Clones Keypoints-Brisk.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Brisk</div>
+		</td>
+   	</tr>
+</table>
+
+<h2><a name="anchor6">File 5: report\1cd306312de\green.png</a></h2>
+<table border="1">	<tr>
+		<td class="VisInsp"><a href = "ba067c676ef_green-Visual Inspection-255-127-0.png" target = "_blank"><img src="ba067c676ef_green-Visual Inspection-255-127-0.png" width ="600"></a><span class="tooltiptext">Visual inspecting the image may reveal inconsistencies in lights, shadows, proportions. Also consider possible inconsistencies at the context level (objects that could not be there, image content inconsistent with information available in metadata, etc.). Click on the image to view it in a separate tab.</span></td>
+		<td><img src="yellow.png" width ="300"></td>
+	</tr></table><h3>Brief File Format Analysis <span style="color:red">- WARNING! -</span>
+</h3>
+<table border="1" class="rffaTable">
+	<tr><th class ="CatProp" colspan = "4">Image Properties</th></tr>
+	<tr>
+		<th class ="CatProp subth">Id</th>
+		<th class ="CatProp subth">Name</th>
+		<th class ="CatProp subth">Value</th>
+		<th class ="CatProp subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatProp">0</td>
+		<td class ="CatProp">Format <span class="tooltiptext">The format used to store the image to file. Most cameras/smartphones produce either files in the JPEG format or in proprietary RAW format (for example ARW, CRW, DCR, NEF, ORF, X3F). Formats like PNG, BMP, GIF are less common for camera original images and may suggest software processing.</span></td>
+		<td class ="CatProp">PNG</td>
+		<td style="color:red" class ="CatProp">Format is not a standard one<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">1</td>
+		<td class ="CatProp">Image Encoded Size <span class="tooltiptext">This is the resolution (height and width in pixels) of the image as it is stored on the computer.</span></td>
+		<td class ="CatProp">[418,209]</td>
+		<td style="color:red" class ="CatProp">Resolution is low<br>Odd width<br>Odd height<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">2</td>
+		<td class ="CatProp">Aspect Ratio <span class="tooltiptext">The value you obtain dividing image width in pixels by image height in pixel (or viceversa: the larger one is always divided by the smaller one).</span></td>
+		<td class ="CatProp">2.00</td>
+		<td style="color:red" class ="CatProp">Odd aspect ratio<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">3</td>
+		<td class ="CatProp">Thumbnail Size <span class="tooltiptext">Thumbnail is a small image caption stored inside the image file. This value tells the resolution (height and width in pixels) of the Thumbnail. Absence of thumbnail is very uncommon for camera original images.</span></td>
+		<td class ="CatProp">[0,0]</td>
+		<td style="color:red" class ="CatProp">Thumbnail is missing<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">4</td>
+		<td class ="CatProp">MD5 <span class="tooltiptext">The MD5 hash value of the file, useful to know if the file is identical to another file (they must have identical hash values).</span></td>
+		<td class ="CatProp">3916a6d16051b2e5599fe78d44e49abb</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr><th class ="CatMeta" colspan = "4">Image Metadata</th></tr>
+	<tr>
+		<th class ="CatMeta subth">Id</th>
+		<th class ="CatMeta subth">Name</th>
+		<th class ="CatMeta subth">Value</th>
+		<th class ="CatMeta subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatMeta">5</td>
+		<td class ="CatMeta">Number of Exif fields <span class="tooltiptext">Total number of Exif metadata contained in the image header. Presence of Exif metadata is normal and expected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">6</td>
+		<td class ="CatMeta">Number of Photoshop fields <span class="tooltiptext">Total number of Adobe Photoshop metadata contained in the image header. Presence of Photoshop metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">7</td>
+		<td class ="CatMeta">Number of XMP fields <span class="tooltiptext">Total number of Adobe XMP metadata contained in the image header. Presence of Adobe XMP metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+</table>
+
+<h3>Brief Local Analysis</h3><table border="1" class="rlaTable">
+	<tr>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_green-ELA-MSE-75-0.png" target = "_blank"><img src="ba067c676ef_green-ELA-MSE-75-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-75</div>
+		</td>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_green-ELA-MSE-90-0.png" target = "_blank"><img src="ba067c676ef_green-ELA-MSE-90-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-90</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_green-DCT Map-Y-30-63-0.png" target = "_blank"><img src="ba067c676ef_green-DCT Map-Y-30-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-30-63</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_green-DCT Map-Y-1-63-0.png" target = "_blank"><img src="ba067c676ef_green-DCT Map-Y-1-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-1-63</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">JPEG Dimples Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_green-JPEG Dimples Map-Auto-Color-Off.png" target = "_blank"><img src="ba067c676ef_green-JPEG Dimples Map-Auto-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto</div>
+		</td>
+		<td>
+			<div class="filterName">JPEG Ghosts Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_green-JPEG Ghosts Map-Auto-Yes-Color-Off.png" target = "_blank"><img src="ba067c676ef_green-JPEG Ghosts Map-Auto-Yes-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto-Yes</div>
+		</td>
+		<td>
+			<div class="filterName">Correlation Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_green-Correlation Map-Predictive-0.png" target = "_blank"><img src="ba067c676ef_green-Correlation Map-Predictive-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Predictive</div>
+		</td>
+		<td>
+			<div class="filterName">Noise Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_green-Noise Map-4-8-0.png" target = "_blank"><img src="ba067c676ef_green-Noise Map-4-8-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">4-8</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">Clones Keypoints</div>
+			<div class="filterOutput"><a href = "ba067c676ef_green-Clones Keypoints-Brisk.png" target = "_blank"><img src="ba067c676ef_green-Clones Keypoints-Brisk.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Brisk</div>
+		</td>
+   	</tr>
+</table>
+
+<h2><a name="anchor7">File 6: report\1cd306312de\DSC_0023-Visual Inspection-255-127-0.png</a></h2>
+<table border="1">	<tr>
+		<td class="VisInsp"><a href = "ba067c676ef_DSC_0023-Visual Inspection-255-127-0-Visual Inspection-255-127-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Visual Inspection-255-127-0-Visual Inspection-255-127-0.png" width ="600"></a><span class="tooltiptext">Visual inspecting the image may reveal inconsistencies in lights, shadows, proportions. Also consider possible inconsistencies at the context level (objects that could not be there, image content inconsistent with information available in metadata, etc.). Click on the image to view it in a separate tab.</span></td>
+		<td><img src="yellow.png" width ="300"></td>
+	</tr></table><h3>Brief File Format Analysis <span style="color:red">- WARNING! -</span>
+</h3>
+<table border="1" class="rffaTable">
+	<tr><th class ="CatProp" colspan = "4">Image Properties</th></tr>
+	<tr>
+		<th class ="CatProp subth">Id</th>
+		<th class ="CatProp subth">Name</th>
+		<th class ="CatProp subth">Value</th>
+		<th class ="CatProp subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatProp">0</td>
+		<td class ="CatProp">Format <span class="tooltiptext">The format used to store the image to file. Most cameras/smartphones produce either files in the JPEG format or in proprietary RAW format (for example ARW, CRW, DCR, NEF, ORF, X3F). Formats like PNG, BMP, GIF are less common for camera original images and may suggest software processing.</span></td>
+		<td class ="CatProp">PNG</td>
+		<td style="color:red" class ="CatProp">Format is not a standard one<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">1</td>
+		<td class ="CatProp">Image Encoded Size <span class="tooltiptext">This is the resolution (height and width in pixels) of the image as it is stored on the computer.</span></td>
+		<td class ="CatProp">[600,450]</td>
+		<td style="color:red" class ="CatProp">Resolution is low<br>Odd height<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">2</td>
+		<td class ="CatProp">Aspect Ratio <span class="tooltiptext">The value you obtain dividing image width in pixels by image height in pixel (or viceversa: the larger one is always divided by the smaller one).</span></td>
+		<td class ="CatProp">1.33</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">3</td>
+		<td class ="CatProp">Thumbnail Size <span class="tooltiptext">Thumbnail is a small image caption stored inside the image file. This value tells the resolution (height and width in pixels) of the Thumbnail. Absence of thumbnail is very uncommon for camera original images.</span></td>
+		<td class ="CatProp">[0,0]</td>
+		<td style="color:red" class ="CatProp">Thumbnail is missing<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">4</td>
+		<td class ="CatProp">MD5 <span class="tooltiptext">The MD5 hash value of the file, useful to know if the file is identical to another file (they must have identical hash values).</span></td>
+		<td class ="CatProp">b9b85db9c104c5581c0cc6257ea3d413</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr><th class ="CatMeta" colspan = "4">Image Metadata</th></tr>
+	<tr>
+		<th class ="CatMeta subth">Id</th>
+		<th class ="CatMeta subth">Name</th>
+		<th class ="CatMeta subth">Value</th>
+		<th class ="CatMeta subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatMeta">5</td>
+		<td class ="CatMeta">Number of Exif fields <span class="tooltiptext">Total number of Exif metadata contained in the image header. Presence of Exif metadata is normal and expected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">6</td>
+		<td class ="CatMeta">Number of Photoshop fields <span class="tooltiptext">Total number of Adobe Photoshop metadata contained in the image header. Presence of Photoshop metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">7</td>
+		<td class ="CatMeta">Number of XMP fields <span class="tooltiptext">Total number of Adobe XMP metadata contained in the image header. Presence of Adobe XMP metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+</table>
+
+<h3>Brief Local Analysis</h3><table border="1" class="rlaTable">
+	<tr>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Visual Inspection-255-127-0-ELA-MSE-75-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Visual Inspection-255-127-0-ELA-MSE-75-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-75</div>
+		</td>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Visual Inspection-255-127-0-ELA-MSE-90-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Visual Inspection-255-127-0-ELA-MSE-90-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-90</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Visual Inspection-255-127-0-DCT Map-Y-30-63-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Visual Inspection-255-127-0-DCT Map-Y-30-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-30-63</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Visual Inspection-255-127-0-DCT Map-Y-1-63-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Visual Inspection-255-127-0-DCT Map-Y-1-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-1-63</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">JPEG Dimples Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Visual Inspection-255-127-0-JPEG Dimples Map-Auto-Color-Off.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Visual Inspection-255-127-0-JPEG Dimples Map-Auto-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto</div>
+		</td>
+		<td>
+			<div class="filterName">JPEG Ghosts Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Visual Inspection-255-127-0-JPEG Ghosts Map-Auto-Yes-Color-Off.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Visual Inspection-255-127-0-JPEG Ghosts Map-Auto-Yes-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto-Yes</div>
+		</td>
+		<td>
+			<div class="filterName">Correlation Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Visual Inspection-255-127-0-Correlation Map-Predictive-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Visual Inspection-255-127-0-Correlation Map-Predictive-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Predictive</div>
+		</td>
+		<td>
+			<div class="filterName">Noise Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Visual Inspection-255-127-0-Noise Map-4-8-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Visual Inspection-255-127-0-Noise Map-4-8-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">4-8</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">Clones Keypoints</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Visual Inspection-255-127-0-Clones Keypoints-Brisk.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Visual Inspection-255-127-0-Clones Keypoints-Brisk.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Brisk</div>
+		</td>
+   	</tr>
+</table>
+
+<h2><a name="anchor8">File 7: report\1cd306312de\DSC_0023-JPEG Dimples Map-Auto-Color-Off.png</a></h2>
+<table border="1">	<tr>
+		<td class="VisInsp"><a href = "ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-Visual Inspection-255-127-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-Visual Inspection-255-127-0.png" width ="600"></a><span class="tooltiptext">Visual inspecting the image may reveal inconsistencies in lights, shadows, proportions. Also consider possible inconsistencies at the context level (objects that could not be there, image content inconsistent with information available in metadata, etc.). Click on the image to view it in a separate tab.</span></td>
+		<td><img src="yellow.png" width ="300"></td>
+	</tr></table><h3>Brief File Format Analysis <span style="color:red">- WARNING! -</span>
+</h3>
+<table border="1" class="rffaTable">
+	<tr><th class ="CatProp" colspan = "4">Image Properties</th></tr>
+	<tr>
+		<th class ="CatProp subth">Id</th>
+		<th class ="CatProp subth">Name</th>
+		<th class ="CatProp subth">Value</th>
+		<th class ="CatProp subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatProp">0</td>
+		<td class ="CatProp">Format <span class="tooltiptext">The format used to store the image to file. Most cameras/smartphones produce either files in the JPEG format or in proprietary RAW format (for example ARW, CRW, DCR, NEF, ORF, X3F). Formats like PNG, BMP, GIF are less common for camera original images and may suggest software processing.</span></td>
+		<td class ="CatProp">PNG</td>
+		<td style="color:red" class ="CatProp">Format is not a standard one<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">1</td>
+		<td class ="CatProp">Image Encoded Size <span class="tooltiptext">This is the resolution (height and width in pixels) of the image as it is stored on the computer.</span></td>
+		<td class ="CatProp">[600,450]</td>
+		<td style="color:red" class ="CatProp">Resolution is low<br>Odd height<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">2</td>
+		<td class ="CatProp">Aspect Ratio <span class="tooltiptext">The value you obtain dividing image width in pixels by image height in pixel (or viceversa: the larger one is always divided by the smaller one).</span></td>
+		<td class ="CatProp">1.33</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">3</td>
+		<td class ="CatProp">Thumbnail Size <span class="tooltiptext">Thumbnail is a small image caption stored inside the image file. This value tells the resolution (height and width in pixels) of the Thumbnail. Absence of thumbnail is very uncommon for camera original images.</span></td>
+		<td class ="CatProp">[0,0]</td>
+		<td style="color:red" class ="CatProp">Thumbnail is missing<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">4</td>
+		<td class ="CatProp">MD5 <span class="tooltiptext">The MD5 hash value of the file, useful to know if the file is identical to another file (they must have identical hash values).</span></td>
+		<td class ="CatProp">219fb192275a86576b498d6fe2e60fed</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr><th class ="CatMeta" colspan = "4">Image Metadata</th></tr>
+	<tr>
+		<th class ="CatMeta subth">Id</th>
+		<th class ="CatMeta subth">Name</th>
+		<th class ="CatMeta subth">Value</th>
+		<th class ="CatMeta subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatMeta">5</td>
+		<td class ="CatMeta">Number of Exif fields <span class="tooltiptext">Total number of Exif metadata contained in the image header. Presence of Exif metadata is normal and expected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">6</td>
+		<td class ="CatMeta">Number of Photoshop fields <span class="tooltiptext">Total number of Adobe Photoshop metadata contained in the image header. Presence of Photoshop metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">7</td>
+		<td class ="CatMeta">Number of XMP fields <span class="tooltiptext">Total number of Adobe XMP metadata contained in the image header. Presence of Adobe XMP metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+</table>
+
+<h3>Brief Local Analysis</h3><table border="1" class="rlaTable">
+	<tr>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-ELA-MSE-75-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-ELA-MSE-75-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-75</div>
+		</td>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-ELA-MSE-90-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-ELA-MSE-90-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-90</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-DCT Map-Y-30-63-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-DCT Map-Y-30-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-30-63</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-DCT Map-Y-1-63-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-DCT Map-Y-1-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-1-63</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">JPEG Dimples Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-JPEG Dimples Map-Auto-Color-Off.png" target = "_blank"><img src="ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-JPEG Dimples Map-Auto-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto</div>
+		</td>
+		<td>
+			<div class="filterName">JPEG Ghosts Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-JPEG Ghosts Map-Auto-Yes-Color-Off.png" target = "_blank"><img src="ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-JPEG Ghosts Map-Auto-Yes-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto-Yes</div>
+		</td>
+		<td>
+			<div class="filterName">Correlation Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-Correlation Map-Predictive-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-Correlation Map-Predictive-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Predictive</div>
+		</td>
+		<td>
+			<div class="filterName">Noise Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-Noise Map-4-8-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-Noise Map-4-8-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">4-8</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">Clones Keypoints</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-Clones Keypoints-Brisk.png" target = "_blank"><img src="ba067c676ef_DSC_0023-JPEG Dimples Map-Auto-Color-Off-Clones Keypoints-Brisk.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Brisk</div>
+		</td>
+   	</tr>
+</table>
+
+<h2><a name="anchor9">File 8: report\1cd306312de\DSC_0023-ELA-MSE-90-0.png</a></h2>
+<table border="1">	<tr>
+		<td class="VisInsp"><a href = "ba067c676ef_DSC_0023-ELA-MSE-90-0-Visual Inspection-255-127-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-90-0-Visual Inspection-255-127-0.png" width ="600"></a><span class="tooltiptext">Visual inspecting the image may reveal inconsistencies in lights, shadows, proportions. Also consider possible inconsistencies at the context level (objects that could not be there, image content inconsistent with information available in metadata, etc.). Click on the image to view it in a separate tab.</span></td>
+		<td><img src="yellow.png" width ="300"></td>
+	</tr></table><h3>Brief File Format Analysis <span style="color:red">- WARNING! -</span>
+</h3>
+<table border="1" class="rffaTable">
+	<tr><th class ="CatProp" colspan = "4">Image Properties</th></tr>
+	<tr>
+		<th class ="CatProp subth">Id</th>
+		<th class ="CatProp subth">Name</th>
+		<th class ="CatProp subth">Value</th>
+		<th class ="CatProp subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatProp">0</td>
+		<td class ="CatProp">Format <span class="tooltiptext">The format used to store the image to file. Most cameras/smartphones produce either files in the JPEG format or in proprietary RAW format (for example ARW, CRW, DCR, NEF, ORF, X3F). Formats like PNG, BMP, GIF are less common for camera original images and may suggest software processing.</span></td>
+		<td class ="CatProp">PNG</td>
+		<td style="color:red" class ="CatProp">Format is not a standard one<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">1</td>
+		<td class ="CatProp">Image Encoded Size <span class="tooltiptext">This is the resolution (height and width in pixels) of the image as it is stored on the computer.</span></td>
+		<td class ="CatProp">[600,450]</td>
+		<td style="color:red" class ="CatProp">Resolution is low<br>Odd height<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">2</td>
+		<td class ="CatProp">Aspect Ratio <span class="tooltiptext">The value you obtain dividing image width in pixels by image height in pixel (or viceversa: the larger one is always divided by the smaller one).</span></td>
+		<td class ="CatProp">1.33</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">3</td>
+		<td class ="CatProp">Thumbnail Size <span class="tooltiptext">Thumbnail is a small image caption stored inside the image file. This value tells the resolution (height and width in pixels) of the Thumbnail. Absence of thumbnail is very uncommon for camera original images.</span></td>
+		<td class ="CatProp">[0,0]</td>
+		<td style="color:red" class ="CatProp">Thumbnail is missing<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">4</td>
+		<td class ="CatProp">MD5 <span class="tooltiptext">The MD5 hash value of the file, useful to know if the file is identical to another file (they must have identical hash values).</span></td>
+		<td class ="CatProp">a51cc56fef534cbd249945f160415049</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr><th class ="CatMeta" colspan = "4">Image Metadata</th></tr>
+	<tr>
+		<th class ="CatMeta subth">Id</th>
+		<th class ="CatMeta subth">Name</th>
+		<th class ="CatMeta subth">Value</th>
+		<th class ="CatMeta subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatMeta">5</td>
+		<td class ="CatMeta">Number of Exif fields <span class="tooltiptext">Total number of Exif metadata contained in the image header. Presence of Exif metadata is normal and expected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">6</td>
+		<td class ="CatMeta">Number of Photoshop fields <span class="tooltiptext">Total number of Adobe Photoshop metadata contained in the image header. Presence of Photoshop metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">7</td>
+		<td class ="CatMeta">Number of XMP fields <span class="tooltiptext">Total number of Adobe XMP metadata contained in the image header. Presence of Adobe XMP metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+</table>
+
+<h3>Brief Local Analysis</h3><table border="1" class="rlaTable">
+	<tr>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-90-0-ELA-MSE-75-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-90-0-ELA-MSE-75-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-75</div>
+		</td>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-90-0-ELA-MSE-90-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-90-0-ELA-MSE-90-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-90</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-90-0-DCT Map-Y-30-63-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-90-0-DCT Map-Y-30-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-30-63</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-90-0-DCT Map-Y-1-63-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-90-0-DCT Map-Y-1-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-1-63</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">JPEG Dimples Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-90-0-JPEG Dimples Map-Auto-Color-Off.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-90-0-JPEG Dimples Map-Auto-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto</div>
+		</td>
+		<td>
+			<div class="filterName">JPEG Ghosts Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-90-0-JPEG Ghosts Map-Auto-Yes-Color-Off.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-90-0-JPEG Ghosts Map-Auto-Yes-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto-Yes</div>
+		</td>
+		<td>
+			<div class="filterName">Correlation Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-90-0-Correlation Map-Predictive-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-90-0-Correlation Map-Predictive-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Predictive</div>
+		</td>
+		<td>
+			<div class="filterName">Noise Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-90-0-Noise Map-4-8-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-90-0-Noise Map-4-8-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">4-8</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">Clones Keypoints</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-90-0-Clones Keypoints-Brisk.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-90-0-Clones Keypoints-Brisk.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Brisk</div>
+		</td>
+   	</tr>
+</table>
+
+<h2><a name="anchor10">File 9: report\1cd306312de\DSC_0023-ELA-MSE-75-0.png</a></h2>
+<table border="1">	<tr>
+		<td class="VisInsp"><a href = "ba067c676ef_DSC_0023-ELA-MSE-75-0-Visual Inspection-255-127-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-75-0-Visual Inspection-255-127-0.png" width ="600"></a><span class="tooltiptext">Visual inspecting the image may reveal inconsistencies in lights, shadows, proportions. Also consider possible inconsistencies at the context level (objects that could not be there, image content inconsistent with information available in metadata, etc.). Click on the image to view it in a separate tab.</span></td>
+		<td><img src="yellow.png" width ="300"></td>
+	</tr></table><h3>Brief File Format Analysis <span style="color:red">- WARNING! -</span>
+</h3>
+<table border="1" class="rffaTable">
+	<tr><th class ="CatProp" colspan = "4">Image Properties</th></tr>
+	<tr>
+		<th class ="CatProp subth">Id</th>
+		<th class ="CatProp subth">Name</th>
+		<th class ="CatProp subth">Value</th>
+		<th class ="CatProp subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatProp">0</td>
+		<td class ="CatProp">Format <span class="tooltiptext">The format used to store the image to file. Most cameras/smartphones produce either files in the JPEG format or in proprietary RAW format (for example ARW, CRW, DCR, NEF, ORF, X3F). Formats like PNG, BMP, GIF are less common for camera original images and may suggest software processing.</span></td>
+		<td class ="CatProp">PNG</td>
+		<td style="color:red" class ="CatProp">Format is not a standard one<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">1</td>
+		<td class ="CatProp">Image Encoded Size <span class="tooltiptext">This is the resolution (height and width in pixels) of the image as it is stored on the computer.</span></td>
+		<td class ="CatProp">[600,450]</td>
+		<td style="color:red" class ="CatProp">Resolution is low<br>Odd height<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">2</td>
+		<td class ="CatProp">Aspect Ratio <span class="tooltiptext">The value you obtain dividing image width in pixels by image height in pixel (or viceversa: the larger one is always divided by the smaller one).</span></td>
+		<td class ="CatProp">1.33</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">3</td>
+		<td class ="CatProp">Thumbnail Size <span class="tooltiptext">Thumbnail is a small image caption stored inside the image file. This value tells the resolution (height and width in pixels) of the Thumbnail. Absence of thumbnail is very uncommon for camera original images.</span></td>
+		<td class ="CatProp">[0,0]</td>
+		<td style="color:red" class ="CatProp">Thumbnail is missing<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">4</td>
+		<td class ="CatProp">MD5 <span class="tooltiptext">The MD5 hash value of the file, useful to know if the file is identical to another file (they must have identical hash values).</span></td>
+		<td class ="CatProp">57e0da1814d1ece7ab6a0695feeb3228</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr><th class ="CatMeta" colspan = "4">Image Metadata</th></tr>
+	<tr>
+		<th class ="CatMeta subth">Id</th>
+		<th class ="CatMeta subth">Name</th>
+		<th class ="CatMeta subth">Value</th>
+		<th class ="CatMeta subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatMeta">5</td>
+		<td class ="CatMeta">Number of Exif fields <span class="tooltiptext">Total number of Exif metadata contained in the image header. Presence of Exif metadata is normal and expected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">6</td>
+		<td class ="CatMeta">Number of Photoshop fields <span class="tooltiptext">Total number of Adobe Photoshop metadata contained in the image header. Presence of Photoshop metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">7</td>
+		<td class ="CatMeta">Number of XMP fields <span class="tooltiptext">Total number of Adobe XMP metadata contained in the image header. Presence of Adobe XMP metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+</table>
+
+<h3>Brief Local Analysis</h3><table border="1" class="rlaTable">
+	<tr>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-75-0-ELA-MSE-75-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-75-0-ELA-MSE-75-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-75</div>
+		</td>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-75-0-ELA-MSE-90-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-75-0-ELA-MSE-90-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-90</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-75-0-DCT Map-Y-30-63-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-75-0-DCT Map-Y-30-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-30-63</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-75-0-DCT Map-Y-1-63-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-75-0-DCT Map-Y-1-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-1-63</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">JPEG Dimples Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-75-0-JPEG Dimples Map-Auto-Color-Off.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-75-0-JPEG Dimples Map-Auto-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto</div>
+		</td>
+		<td>
+			<div class="filterName">JPEG Ghosts Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-75-0-JPEG Ghosts Map-Auto-Yes-Color-Off.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-75-0-JPEG Ghosts Map-Auto-Yes-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto-Yes</div>
+		</td>
+		<td>
+			<div class="filterName">Correlation Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-75-0-Correlation Map-Predictive-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-75-0-Correlation Map-Predictive-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Predictive</div>
+		</td>
+		<td>
+			<div class="filterName">Noise Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-75-0-Noise Map-4-8-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-75-0-Noise Map-4-8-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">4-8</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">Clones Keypoints</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ELA-MSE-75-0-Clones Keypoints-Brisk.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ELA-MSE-75-0-Clones Keypoints-Brisk.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Brisk</div>
+		</td>
+   	</tr>
+</table>
+
+<h2><a name="anchor11">File 10: report\1cd306312de\DSC_0023-Correlation Map-Predictive-0.png</a></h2>
+<table border="1">	<tr>
+		<td class="VisInsp"><a href = "ba067c676ef_DSC_0023-Correlation Map-Predictive-0-Visual Inspection-255-127-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Correlation Map-Predictive-0-Visual Inspection-255-127-0.png" width ="600"></a><span class="tooltiptext">Visual inspecting the image may reveal inconsistencies in lights, shadows, proportions. Also consider possible inconsistencies at the context level (objects that could not be there, image content inconsistent with information available in metadata, etc.). Click on the image to view it in a separate tab.</span></td>
+		<td><img src="yellow.png" width ="300"></td>
+	</tr></table><h3>Brief File Format Analysis <span style="color:red">- WARNING! -</span>
+</h3>
+<table border="1" class="rffaTable">
+	<tr><th class ="CatProp" colspan = "4">Image Properties</th></tr>
+	<tr>
+		<th class ="CatProp subth">Id</th>
+		<th class ="CatProp subth">Name</th>
+		<th class ="CatProp subth">Value</th>
+		<th class ="CatProp subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatProp">0</td>
+		<td class ="CatProp">Format <span class="tooltiptext">The format used to store the image to file. Most cameras/smartphones produce either files in the JPEG format or in proprietary RAW format (for example ARW, CRW, DCR, NEF, ORF, X3F). Formats like PNG, BMP, GIF are less common for camera original images and may suggest software processing.</span></td>
+		<td class ="CatProp">PNG</td>
+		<td style="color:red" class ="CatProp">Format is not a standard one<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">1</td>
+		<td class ="CatProp">Image Encoded Size <span class="tooltiptext">This is the resolution (height and width in pixels) of the image as it is stored on the computer.</span></td>
+		<td class ="CatProp">[600,450]</td>
+		<td style="color:red" class ="CatProp">Resolution is low<br>Odd height<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">2</td>
+		<td class ="CatProp">Aspect Ratio <span class="tooltiptext">The value you obtain dividing image width in pixels by image height in pixel (or viceversa: the larger one is always divided by the smaller one).</span></td>
+		<td class ="CatProp">1.33</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">3</td>
+		<td class ="CatProp">Thumbnail Size <span class="tooltiptext">Thumbnail is a small image caption stored inside the image file. This value tells the resolution (height and width in pixels) of the Thumbnail. Absence of thumbnail is very uncommon for camera original images.</span></td>
+		<td class ="CatProp">[0,0]</td>
+		<td style="color:red" class ="CatProp">Thumbnail is missing<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">4</td>
+		<td class ="CatProp">MD5 <span class="tooltiptext">The MD5 hash value of the file, useful to know if the file is identical to another file (they must have identical hash values).</span></td>
+		<td class ="CatProp">c7cd19972f1369a265b882913a056bb8</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr><th class ="CatMeta" colspan = "4">Image Metadata</th></tr>
+	<tr>
+		<th class ="CatMeta subth">Id</th>
+		<th class ="CatMeta subth">Name</th>
+		<th class ="CatMeta subth">Value</th>
+		<th class ="CatMeta subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatMeta">5</td>
+		<td class ="CatMeta">Number of Exif fields <span class="tooltiptext">Total number of Exif metadata contained in the image header. Presence of Exif metadata is normal and expected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">6</td>
+		<td class ="CatMeta">Number of Photoshop fields <span class="tooltiptext">Total number of Adobe Photoshop metadata contained in the image header. Presence of Photoshop metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">7</td>
+		<td class ="CatMeta">Number of XMP fields <span class="tooltiptext">Total number of Adobe XMP metadata contained in the image header. Presence of Adobe XMP metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+</table>
+
+<h3>Brief Local Analysis</h3><table border="1" class="rlaTable">
+	<tr>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Correlation Map-Predictive-0-ELA-MSE-75-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Correlation Map-Predictive-0-ELA-MSE-75-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-75</div>
+		</td>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Correlation Map-Predictive-0-ELA-MSE-90-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Correlation Map-Predictive-0-ELA-MSE-90-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-90</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Correlation Map-Predictive-0-DCT Map-Y-30-63-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Correlation Map-Predictive-0-DCT Map-Y-30-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-30-63</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Correlation Map-Predictive-0-DCT Map-Y-1-63-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Correlation Map-Predictive-0-DCT Map-Y-1-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-1-63</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">JPEG Dimples Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Correlation Map-Predictive-0-JPEG Dimples Map-Auto-Color-Off.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Correlation Map-Predictive-0-JPEG Dimples Map-Auto-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto</div>
+		</td>
+		<td>
+			<div class="filterName">JPEG Ghosts Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Correlation Map-Predictive-0-JPEG Ghosts Map-Auto-Yes-Color-Off.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Correlation Map-Predictive-0-JPEG Ghosts Map-Auto-Yes-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto-Yes</div>
+		</td>
+		<td>
+			<div class="filterName">Correlation Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Correlation Map-Predictive-0-Correlation Map-Predictive-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Correlation Map-Predictive-0-Correlation Map-Predictive-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Predictive</div>
+		</td>
+		<td>
+			<div class="filterName">Noise Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Correlation Map-Predictive-0-Noise Map-4-8-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Correlation Map-Predictive-0-Noise Map-4-8-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">4-8</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">Clones Keypoints</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Correlation Map-Predictive-0-Clones Keypoints-Brisk.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Correlation Map-Predictive-0-Clones Keypoints-Brisk.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Brisk</div>
+		</td>
+   	</tr>
+</table>
+
+<h2><a name="anchor12">File 11: report\1cd306312de\DSC_0023-Clones Keypoints-Brisk.png</a></h2>
+<table border="1">	<tr>
+		<td class="VisInsp"><a href = "ba067c676ef_DSC_0023-Clones Keypoints-Brisk-Visual Inspection-255-127-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Clones Keypoints-Brisk-Visual Inspection-255-127-0.png" width ="600"></a><span class="tooltiptext">Visual inspecting the image may reveal inconsistencies in lights, shadows, proportions. Also consider possible inconsistencies at the context level (objects that could not be there, image content inconsistent with information available in metadata, etc.). Click on the image to view it in a separate tab.</span></td>
+		<td><img src="yellow.png" width ="300"></td>
+	</tr></table><h3>Brief File Format Analysis <span style="color:red">- WARNING! -</span>
+</h3>
+<table border="1" class="rffaTable">
+	<tr><th class ="CatProp" colspan = "4">Image Properties</th></tr>
+	<tr>
+		<th class ="CatProp subth">Id</th>
+		<th class ="CatProp subth">Name</th>
+		<th class ="CatProp subth">Value</th>
+		<th class ="CatProp subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatProp">0</td>
+		<td class ="CatProp">Format <span class="tooltiptext">The format used to store the image to file. Most cameras/smartphones produce either files in the JPEG format or in proprietary RAW format (for example ARW, CRW, DCR, NEF, ORF, X3F). Formats like PNG, BMP, GIF are less common for camera original images and may suggest software processing.</span></td>
+		<td class ="CatProp">PNG</td>
+		<td style="color:red" class ="CatProp">Format is not a standard one<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">1</td>
+		<td class ="CatProp">Image Encoded Size <span class="tooltiptext">This is the resolution (height and width in pixels) of the image as it is stored on the computer.</span></td>
+		<td class ="CatProp">[600,450]</td>
+		<td style="color:red" class ="CatProp">Resolution is low<br>Odd height<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">2</td>
+		<td class ="CatProp">Aspect Ratio <span class="tooltiptext">The value you obtain dividing image width in pixels by image height in pixel (or viceversa: the larger one is always divided by the smaller one).</span></td>
+		<td class ="CatProp">1.33</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">3</td>
+		<td class ="CatProp">Thumbnail Size <span class="tooltiptext">Thumbnail is a small image caption stored inside the image file. This value tells the resolution (height and width in pixels) of the Thumbnail. Absence of thumbnail is very uncommon for camera original images.</span></td>
+		<td class ="CatProp">[0,0]</td>
+		<td style="color:red" class ="CatProp">Thumbnail is missing<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">4</td>
+		<td class ="CatProp">MD5 <span class="tooltiptext">The MD5 hash value of the file, useful to know if the file is identical to another file (they must have identical hash values).</span></td>
+		<td class ="CatProp">64dbc6b69ce354783e0474f89ba49d4b</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr><th class ="CatMeta" colspan = "4">Image Metadata</th></tr>
+	<tr>
+		<th class ="CatMeta subth">Id</th>
+		<th class ="CatMeta subth">Name</th>
+		<th class ="CatMeta subth">Value</th>
+		<th class ="CatMeta subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatMeta">5</td>
+		<td class ="CatMeta">Number of Exif fields <span class="tooltiptext">Total number of Exif metadata contained in the image header. Presence of Exif metadata is normal and expected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">6</td>
+		<td class ="CatMeta">Number of Photoshop fields <span class="tooltiptext">Total number of Adobe Photoshop metadata contained in the image header. Presence of Photoshop metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">7</td>
+		<td class ="CatMeta">Number of XMP fields <span class="tooltiptext">Total number of Adobe XMP metadata contained in the image header. Presence of Adobe XMP metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+</table>
+
+<h3>Brief Local Analysis</h3><table border="1" class="rlaTable">
+	<tr>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Clones Keypoints-Brisk-ELA-MSE-75-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Clones Keypoints-Brisk-ELA-MSE-75-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-75</div>
+		</td>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Clones Keypoints-Brisk-ELA-MSE-90-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Clones Keypoints-Brisk-ELA-MSE-90-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-90</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Clones Keypoints-Brisk-DCT Map-Y-30-63-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Clones Keypoints-Brisk-DCT Map-Y-30-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-30-63</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Clones Keypoints-Brisk-DCT Map-Y-1-63-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Clones Keypoints-Brisk-DCT Map-Y-1-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-1-63</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">JPEG Dimples Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Clones Keypoints-Brisk-JPEG Dimples Map-Auto-Color-Off.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Clones Keypoints-Brisk-JPEG Dimples Map-Auto-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto</div>
+		</td>
+		<td>
+			<div class="filterName">JPEG Ghosts Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Clones Keypoints-Brisk-JPEG Ghosts Map-Auto-Yes-Color-Off.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Clones Keypoints-Brisk-JPEG Ghosts Map-Auto-Yes-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto-Yes</div>
+		</td>
+		<td>
+			<div class="filterName">Correlation Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Clones Keypoints-Brisk-Correlation Map-Predictive-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Clones Keypoints-Brisk-Correlation Map-Predictive-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Predictive</div>
+		</td>
+		<td>
+			<div class="filterName">Noise Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Clones Keypoints-Brisk-Noise Map-4-8-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Clones Keypoints-Brisk-Noise Map-4-8-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">4-8</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">Clones Keypoints</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-Clones Keypoints-Brisk-Clones Keypoints-Brisk.png" target = "_blank"><img src="ba067c676ef_DSC_0023-Clones Keypoints-Brisk-Clones Keypoints-Brisk.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Brisk</div>
+		</td>
+   	</tr>
+</table>
+
+<h2><a name="anchor13">File 12: report\1cd306312de\DSC_0023-ADJPEG-EM--1-12-Color-Off.png</a></h2>
+<table border="1">	<tr>
+		<td class="VisInsp"><a href = "ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-Visual Inspection-255-127-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-Visual Inspection-255-127-0.png" width ="600"></a><span class="tooltiptext">Visual inspecting the image may reveal inconsistencies in lights, shadows, proportions. Also consider possible inconsistencies at the context level (objects that could not be there, image content inconsistent with information available in metadata, etc.). Click on the image to view it in a separate tab.</span></td>
+		<td><img src="yellow.png" width ="300"></td>
+	</tr></table><h3>Brief File Format Analysis <span style="color:red">- WARNING! -</span>
+</h3>
+<table border="1" class="rffaTable">
+	<tr><th class ="CatProp" colspan = "4">Image Properties</th></tr>
+	<tr>
+		<th class ="CatProp subth">Id</th>
+		<th class ="CatProp subth">Name</th>
+		<th class ="CatProp subth">Value</th>
+		<th class ="CatProp subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatProp">0</td>
+		<td class ="CatProp">Format <span class="tooltiptext">The format used to store the image to file. Most cameras/smartphones produce either files in the JPEG format or in proprietary RAW format (for example ARW, CRW, DCR, NEF, ORF, X3F). Formats like PNG, BMP, GIF are less common for camera original images and may suggest software processing.</span></td>
+		<td class ="CatProp">PNG</td>
+		<td style="color:red" class ="CatProp">Format is not a standard one<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">1</td>
+		<td class ="CatProp">Image Encoded Size <span class="tooltiptext">This is the resolution (height and width in pixels) of the image as it is stored on the computer.</span></td>
+		<td class ="CatProp">[600,450]</td>
+		<td style="color:red" class ="CatProp">Resolution is low<br>Odd height<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">2</td>
+		<td class ="CatProp">Aspect Ratio <span class="tooltiptext">The value you obtain dividing image width in pixels by image height in pixel (or viceversa: the larger one is always divided by the smaller one).</span></td>
+		<td class ="CatProp">1.33</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">3</td>
+		<td class ="CatProp">Thumbnail Size <span class="tooltiptext">Thumbnail is a small image caption stored inside the image file. This value tells the resolution (height and width in pixels) of the Thumbnail. Absence of thumbnail is very uncommon for camera original images.</span></td>
+		<td class ="CatProp">[0,0]</td>
+		<td style="color:red" class ="CatProp">Thumbnail is missing<br></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">4</td>
+		<td class ="CatProp">MD5 <span class="tooltiptext">The MD5 hash value of the file, useful to know if the file is identical to another file (they must have identical hash values).</span></td>
+		<td class ="CatProp">fe8e35142cb57010fc597295513d7c42</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr><th class ="CatMeta" colspan = "4">Image Metadata</th></tr>
+	<tr>
+		<th class ="CatMeta subth">Id</th>
+		<th class ="CatMeta subth">Name</th>
+		<th class ="CatMeta subth">Value</th>
+		<th class ="CatMeta subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatMeta">5</td>
+		<td class ="CatMeta">Number of Exif fields <span class="tooltiptext">Total number of Exif metadata contained in the image header. Presence of Exif metadata is normal and expected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">6</td>
+		<td class ="CatMeta">Number of Photoshop fields <span class="tooltiptext">Total number of Adobe Photoshop metadata contained in the image header. Presence of Photoshop metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">7</td>
+		<td class ="CatMeta">Number of XMP fields <span class="tooltiptext">Total number of Adobe XMP metadata contained in the image header. Presence of Adobe XMP metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">0</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+</table>
+
+<h3>Brief Local Analysis</h3><table border="1" class="rlaTable">
+	<tr>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-ELA-MSE-75-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-ELA-MSE-75-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-75</div>
+		</td>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-ELA-MSE-90-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-ELA-MSE-90-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-90</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-DCT Map-Y-30-63-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-DCT Map-Y-30-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-30-63</div>
+		</td>
+		<td>
+			<div class="filterName">DCT Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-DCT Map-Y-1-63-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-DCT Map-Y-1-63-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Y-1-63</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">JPEG Dimples Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-JPEG Dimples Map-Auto-Color-Off.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-JPEG Dimples Map-Auto-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto</div>
+		</td>
+		<td>
+			<div class="filterName">JPEG Ghosts Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-JPEG Ghosts Map-Auto-Yes-Color-Off.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-JPEG Ghosts Map-Auto-Yes-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto-Yes</div>
+		</td>
+		<td>
+			<div class="filterName">Correlation Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-Correlation Map-Predictive-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-Correlation Map-Predictive-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Predictive</div>
+		</td>
+		<td>
+			<div class="filterName">Noise Map</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-Noise Map-4-8-0.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-Noise Map-4-8-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">4-8</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">Clones Keypoints</div>
+			<div class="filterOutput"><a href = "ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-Clones Keypoints-Brisk.png" target = "_blank"><img src="ba067c676ef_DSC_0023-ADJPEG-EM--1-12-Color-Off-Clones Keypoints-Brisk.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Brisk</div>
+		</td>
+   	</tr>
+</table>
+
+<h2><a name="anchor14">File 13: DSC_0023.jpg</a></h2>
+<table border="1">	<tr>
+		<td class="VisInsp"><a href = "DSC_0023-Visual Inspection-255-127-0.png" target = "_blank"><img src="DSC_0023-Visual Inspection-255-127-0.png" width ="600"></a><span class="tooltiptext">Visual inspecting the image may reveal inconsistencies in lights, shadows, proportions. Also consider possible inconsistencies at the context level (objects that could not be there, image content inconsistent with information available in metadata, etc.). Click on the image to view it in a separate tab.</span></td>
+		<td><img src="red.png" width ="300"></td>
+	</tr></table><h3>Brief File Format Analysis <span style="color:red">- WARNING! -</span>
+</h3>
+<table border="1" class="rffaTable">
+	<tr><th class ="CatProp" colspan = "4">Image Properties</th></tr>
+	<tr>
+		<th class ="CatProp subth">Id</th>
+		<th class ="CatProp subth">Name</th>
+		<th class ="CatProp subth">Value</th>
+		<th class ="CatProp subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatProp">0</td>
+		<td class ="CatProp">Format <span class="tooltiptext">The format used to store the image to file. Most cameras/smartphones produce either files in the JPEG format or in proprietary RAW format (for example ARW, CRW, DCR, NEF, ORF, X3F). Formats like PNG, BMP, GIF are less common for camera original images and may suggest software processing.</span></td>
+		<td class ="CatProp">JPEG</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">1</td>
+		<td class ="CatProp">Image Encoded Size <span class="tooltiptext">This is the resolution (height and width in pixels) of the image as it is stored on the computer.</span></td>
+		<td class ="CatProp">[3264,2448]</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">2</td>
+		<td class ="CatProp">Aspect Ratio <span class="tooltiptext">The value you obtain dividing image width in pixels by image height in pixel (or viceversa: the larger one is always divided by the smaller one).</span></td>
+		<td class ="CatProp">1.33</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">3</td>
+		<td class ="CatProp">Thumbnail Size <span class="tooltiptext">Thumbnail is a small image caption stored inside the image file. This value tells the resolution (height and width in pixels) of the Thumbnail. Absence of thumbnail is very uncommon for camera original images.</span></td>
+		<td class ="CatProp">[160,120]</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr>
+		<td class ="CatProp">4</td>
+		<td class ="CatProp">MD5 <span class="tooltiptext">The MD5 hash value of the file, useful to know if the file is identical to another file (they must have identical hash values).</span></td>
+		<td class ="CatProp">eb690c0395f0742ed0b7a092de8b611f</td>
+		<td style="color:orange" class ="CatProp"></td>
+	</tr>
+	<tr><th class ="CatMeta" colspan = "4">Image Metadata</th></tr>
+	<tr>
+		<th class ="CatMeta subth">Id</th>
+		<th class ="CatMeta subth">Name</th>
+		<th class ="CatMeta subth">Value</th>
+		<th class ="CatMeta subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatMeta">5</td>
+		<td class ="CatMeta">Exif Make <span class="tooltiptext">Information about the brand of the camera that captured the image, as available from image metadata.</span></td>
+		<td class ="CatMeta">SAMSUNG</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">6</td>
+		<td class ="CatMeta">Exif Model <span class="tooltiptext">Information about the model of the camera that captured the image, as available from Exif metadata.</span></td>
+		<td class ="CatMeta">GT-I9105P</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">7</td>
+		<td class ="CatMeta">Exif Software <span class="tooltiptext">Information about the last software that processed the image, as available from Exif metadata. Common values for original images are strings like “Ver.1.00”, ”12.343”, etc. Examples of suspicious values are “Adobe Photoshop”, “TouchRetouch”, etc. as they indicate out-camera processing.</span></td>
+		<td class ="CatMeta">Adobe Photoshop CS4 Windows</td>
+		<td style="color:red" class ="CatMeta">EXIF Software is an editing application<br></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">8</td>
+		<td class ="CatMeta">Exif ModifyDate <span class="tooltiptext">The date and time of the last file modification according to image metadata. This information is written inside the image file and, as such, travels with the image file (it is not maintained and updated by the Operating System).</span></td>
+		<td class ="CatMeta">2018:10:10 12:34:34</td>
+		<td style="color:red" class ="CatMeta">EXIF ModifyDate differs significantly from Exif DateTimeOriginal<br></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">9</td>
+		<td class ="CatMeta">Number of Exif fields <span class="tooltiptext">Total number of Exif metadata contained in the image header. Presence of Exif metadata is normal and expected in original images.</span></td>
+		<td class ="CatMeta">48</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">10</td>
+		<td class ="CatMeta">Number of Photoshop fields <span class="tooltiptext">Total number of Adobe Photoshop metadata contained in the image header. Presence of Photoshop metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">21</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr>
+		<td class ="CatMeta">11</td>
+		<td class ="CatMeta">Number of XMP fields <span class="tooltiptext">Total number of Adobe XMP metadata contained in the image header. Presence of Adobe XMP metadata is suspicious and unexpected in original images.</span></td>
+		<td class ="CatMeta">62</td>
+		<td style="color:orange" class ="CatMeta"></td>
+	</tr>
+	<tr><th class ="CatJpeg" colspan = "4">JPEG Info</th></tr>
+	<tr>
+		<th class ="CatJpeg subth">Id</th>
+		<th class ="CatJpeg subth">Name</th>
+		<th class ="CatJpeg subth">Value</th>
+		<th class ="CatJpeg subth">Warning message</th>
+	</tr>
+	<tr>
+		<td class ="CatJpeg">12</td>
+		<td class ="CatJpeg">JPEG Quality <span class="tooltiptext">Estimate of the current compression quality of the image (1 is minimum, 100 is maximum quality).</span></td>
+		<td class ="CatJpeg">96</td>
+		<td style="color:orange" class ="CatJpeg"></td>
+	</tr>
+	<tr>
+		<td class ="CatJpeg">13</td>
+		<td class ="CatJpeg">JPEG QT Hash <span class="tooltiptext">Digest of the JPEG Quantization Table (QT), that can be considered a signature of the camera model. This digest is compared with those available in Authenticate internal database for the same camera model, if any (Exif Make and Exif Model information are used to select the appropriate digest from the internal database).</span></td>
+		<td class ="CatJpeg">863DA02155829A5B46C85B789F2982F8</td>
+		<td style="color:orange" class ="CatJpeg">Compression signature not found in the DB for this camera<br></td>
+	</tr>
+	<tr>
+		<td class ="CatJpeg">14</td>
+		<td class ="CatJpeg">JPEG HT is standard IJG <span class="tooltiptext">JPEG Huffman Tables (HT) are part of the JPEG coding process. Camera original images usually employ standard HTs, while software-processed images may use non standard (optimized) HTs.</span></td>
+		<td class ="CatJpeg">false</td>
+		<td style="color:red" class ="CatJpeg">Huffman tables are not IJG standard<br></td>
+	</tr>
+</table>
+
+<h3>Brief Local Analysis<span style="color:red">-WARNING!-</span></h3><table border="1" class="rlaTable">
+	<tr>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "DSC_0023-ELA-MSE-75-0.png" target = "_blank"><img src="DSC_0023-ELA-MSE-75-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-75</div>
+		</td>
+		<td>
+			<div class="filterName">ELA</div>
+			<div class="filterOutput"><a href = "DSC_0023-ELA-MSE-90-0.png" target = "_blank"><img src="DSC_0023-ELA-MSE-90-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">MSE-90</div>
+		</td>
+		<td>
+			<div class="filterName">JPEG Dimples Map</div>
+			<div class="filterOutput"><a href = "DSC_0023-JPEG Dimples Map-Auto-Color-Off.png" target = "_blank"><img src="DSC_0023-JPEG Dimples Map-Auto-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Auto</div>
+		</td>
+		<td>
+			<div class="filterNameWarning">ADJPEG</div>
+			<div class="filterOutput"><a href = "DSC_0023-ADJPEG-EM--1-12-Color-Off.png" target = "_blank"><img src="DSC_0023-ADJPEG-EM--1-12-Color-Off.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">EM--1-12</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="filterName">Correlation Map</div>
+			<div class="filterOutput"><a href = "DSC_0023-Correlation Map-Predictive-0.png" target = "_blank"><img src="DSC_0023-Correlation Map-Predictive-0.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Predictive</div>
+		</td>
+		<td>
+			<div class="filterName">Clones Keypoints</div>
+			<div class="filterOutput"><a href = "DSC_0023-Clones Keypoints-Brisk.png" target = "_blank"><img src="DSC_0023-Clones Keypoints-Brisk.png" width ="250"></a><span class="tooltiptext">Regions that stand out in the output map corresponding to a part of the image with no saturation nor strong texture indicate possible forgery. Completely red/bright maps are usually less significant. Click on a map to view it in a separate tab.</span></div>
+			<div class="filterParams">Brisk</div>
+		</td>
+  	</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html><html><head><style>
+<!-- <!DOCTYPE html><html><head><style> -->
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body{
+  color:#444;
+  font-family:Georgia, Palatino, 'Palatino Linotype', Times,
+              'Times New Roman', serif,
+              "Hiragino Sans GB", "STXihei", "微软雅黑";
+  font-size:12px;
+  line-height:1.5em;
+  background:#fefefe;
+  width: 65em;
+  margin: 80px auto;
+  padding: 5em 5em;
+  outline: 1300px solid #FAFAFA;
+  background-image:url('img/ampedsoftware.bmp');
+  background-repeat: no-repeat;
+  background-position: 800px 100px;
+}
+
+a{ color: #0645ad; text-decoration:none;}
+a:visited{ color: #0b0080; }
+a:hover{ color: #06e; }
+a:active{ color:#faa700; }
+a:focus{ outline: thin dotted; }
+a:hover, a:active{ outline: 0; }
+
+span.backtick {
+  border:1px solid #EAEAEA;
+  border-radius:3px;
+  background:#F8F8F8;
+  padding:0px 3px 0px 3px;
+}
+
+::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+::selection{background:rgba(255,255,0,0.3);color:#000}
+
+a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+
+p{
+margin:1em 0;
+}
+
+img{
+max-width:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+font-weight:normal;
+color:#111;
+line-height:1em;
+}
+h4,h5,h6{ font-weight: bold; }
+h1{ font-size:2.5em; }
+h2{ font-size:2em; word-wrap:break-word;}
+h3{ font-size:1.5em; }
+h4{ font-size:1.2em; }
+h5{ font-size:1em; }
+h6{ font-size:0.9em; }
+
+blockquote{
+color:#666666;
+margin:0;
+padding-left: 3em;
+border-left: 0.5em #EEE solid;
+}
+hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
+
+
+pre , code, kbd, samp {
+  color: #000;
+  font-family: monospace;
+  font-size: 0.88em;
+  border-radius:3px;
+  background-color: #F8F8F8;
+  border: 1px solid #CCC;
+}
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 5px;}
+pre code { border: 0px !important; }
+
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
+li p:last-child { margin:0 }
+dd { margin: 0 0 0 2em; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; width: auto; }
+
+table {border-collapse: collapse; border-spacing: 0;
+ word-wrap: break-word; word-break: break-all;}
+td { vertical-align: top; word-wrap: break-word; max-width: 350px; }
+table pre {   color: #000;
+  font-family: monospace;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #FFF;
+  border: none;
+}
+
+table.Info {
+	font-size:125%;
+	word-break:break-word;
+}
+
+@media only screen and (min-width: 480px) {
+body{font-size:14px;}
+}
+
+@media only screen and (min-width: 768px) {
+body{font-size:16px;}
+}
+
+@media print {
+  #* { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
+  * {color: black !important; filter:none !important; -ms-filter: none !important; }
+  body{font-size:12pt; max-width:100%;}
+  a, a:visited { text-decoration: underline; }
+  hr { height: 1px; border:0; border-bottom:1px solid black; }
+  #a[href]:after { content: " (" attr(href) ")"; }
+  #abbr[title]:after { content: " (" attr(title) ")"; }
+  .myButton, .myButton * {display: none !important;}
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; padding-right: 1em; page-break-inside: avoid; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page :left { margin: 15mm 20mm 15mm 10mm; }
+  @page :right { margin: 15mm 10mm 15mm 20mm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0));
+	background:-moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0',GradientType=0);
+	background-color:#3d94f6;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+  margin: 10px;
+  float:right;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6));
+	background:-moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:-webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:-o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:-ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6',GradientType=0);
+	background-color:#1e62d0;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.container
+{
+    // ... *snip*
+    overflow: hidden;
+}
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  /*background-image: linear-gradient(to bottom, #3c3c3c 0%, #222 100%);*/
+  background-color: transparent
+  background-repeat: repeat-x;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+  min-height: 60px;
+margin-bottom: 20px;
+border: 1px solid transparent;
+}
+.navbar-brand {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+  color: #9d9d9d;
+  top: 10px;
+  left: 10px;
+  position:relative;
+  height: 50px;
+  padding-top: 15px;
+  font-size: 18px;
+  line-height: 10px;
+
+  background-color: transparent;
+
+}
+
+.overviewtable td{vertical-align: bottom;}
+.rffaTable .CatProp{background-color:#ecf4ff;color:#000000;border-color:inherit;}
+.rffaTable .CatMeta{background-color:#FEFEB8;color:#000000;border-color:inherit;}
+.rffaTable .CatJpeg{background-color:#dbffb0;color:#000000;border-color:inherit;}
+.rffaTable .subth{font-weight:normal; font-style:italic;}
+.rlaTable .filterName{font-weight:bold; text-align:center;}
+.rlaTable .filterNameWarning{font-weight:bold; text-align:center; color:#FF0000}
+.rlaTable .filterParams{font-weight:bold; text-align:center;}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 360px;
+    background-color: #333333;
+    color: #fff;
+    text-align: justify;
+    border-radius: 6px;
+    padding: 5px 5px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.CatProp:hover .tooltiptext {
+    visibility: visible;
+}
+.CatMeta:hover .tooltiptext {
+    visibility: visible;
+}
+.CatJpeg:hover .tooltiptext {
+    visibility: visible;
+}
+
+.VisInsp:hover .tooltiptext {
+    visibility: visible;
+}
+
+.filterOutput:hover .tooltiptext {
+    visibility: visible;
+}
+
+.SummaryTable:hover .tooltiptext {
+    visibility: visible;
+}
+
+.SummaryTable .overviewtable img
+{
+	width:11em;
+}
+
+.summaryPreamble {
+	margin-bottom: 1em;
+	padding: 1em;
+	border:1px dashed black;
+	font-weight: bold;	
+}
+
+.summaryPreamble img{
+	height:3rem;
+	padding-right: 1em;
+}
+
+.summaryPreamble .preambleGreen a{
+	color:#2a9310;
+}	
+
+.summaryPreamble .preambleYellow a{
+	color:#f2c204;
+}	
+
+.summaryPreamble .preambleRed a{
+	color:#bc0909;
+}
+
+.summaryPreamble .preambleGray a{
+	color:#666666;
+}	
+
+.projectReportComment {
+  width: 85%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #666666;
+  padding: 15px; 
+}
+
+.projectReportComment.unset
+{
+	  background: #eeeeee;
+}
+
+.projectReportComment.ok{
+  background: rgba(0, 255, 0, 0.5);
+}
+
+.projectReportComment.tocheck{
+  background: rgba(255, 255, 0, 0.5);;
+}
+
+.projectReportComment.warning{
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.projectReportToc li {
+	padding-left: 1em;
+}
+
+.projectReportToc .icon {
+  float: left;
+  width: 0.8em;
+  height: 0.8em;
+  margin-top: 0.3em;
+  margin-right: 0.3em;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.projectReportToc .icon.warning {
+  background: #D3470F;
+}
+
+.projectReportTocIcon.folder {
+  background: #FFFFFF;
+}
+
+.projectReportToc .icon.tocheck {
+  background: #F3DE1A;
+}
+
+.projectReportToc .icon.ok {
+  background: #82D30F;
+}
+
+.projectReportToc .icon.unset {
+  background: #858585;
+}
+
+#.projectReportToc .text {
+#  margin-left: 0.5em;
+#}
+
+.projectReportToc .text.folder {
+  font-weight: bold;
+}
+
+.projectReportToc .link {
+	color: #000000;
+}
+
+.projectReportToc .link:visited {
+	color: #000000;
+}
+
+.projectReportToc .link:hover {
+	color: #0000FF;
+}
+</style><meta charset="utf-8"></head><body><body onkeypress="keyEvent()">
+<nav class="fixed-nav-bar">
+    <a class="navbar-brand" href="#"></a>
+      <!-- <img src="ampedsoftware.png" alt="Amped Software Logo"></img> -->
+    <script language="JavaScript">
+      var cur = 0;
+      function goToPrev()
+      {
+          cur--;
+          if (cur < 0)
+          {
+              window.location = '#'; 
+              cur = 0;
+            }else {
+              window.location = '#anchor' + cur;
+            }
+
+      }
+
+      function goToNext()
+      {
+          cur++;
+          if (cur > 78)
+              cur = 78;
+          window.location = '#anchor' + cur;
+        }
+
+        function keyEvent()
+        {
+          var key = event.keyCode;
+              if (key == 106)
+                goToPrev();
+              if (key == 107)
+                goToNext();
+        }
+</script>
+<button class="myButton"; onclick="goToNext()">  &raquo; <small>(K)</small> </button>
+<button class="myButton"; onclick="goToPrev()"> <small>(J)</small> &laquo; </button>
+</nav>
+</body>
+<h1>Amped Authenticate Smart Report</h1>
+<hr>
+Report Generation: 2021-04-17 00:15:10<br>
+Program Version Info: <br>
+Build date: 20201216<br>
+Revision: 19348<br>
+Platform: Microsoft Windows, 64 bit<br>
+<hr>
+<h3><a name="anchor0">Summary Table</a></h3>
+<div class="SummaryTable"><div class="summaryPreamble">
+Total number of processed images: 1<br>
+<div class="preambleGreen"><img src="green.png"><a href="#summaryTable_0">Images that are likely to be camera original: 0</a></div>
+<div class="preambleYellow"><img src="yellow.png"><a href="#summaryTable_1">Images with suspicious metadata but no traces of forgery: 0</a></div>
+<div class="preambleRed"><img src="red.png"><a href="#summaryTable_2">Images with traces of possible forgery: 1</a></div>
+</div>
+<h4><a name="summaryTable_2">Images with traces of possible forgery</a></h4>
+<table class="overviewtable" border="1px"><tr>
+<td><a href="C:\Users\Mostafa Fazli\Documents\Amped Authenticate\samples\01 - dock\report\1cd306312de\report.html" target = "_blank"> <img src="1cd306312de\DSC_0023-Visual Inspection-255-127-0.png" width ="600"><br>
+<img src="red.png" width ="300"> </a>
+</td>
+</tr>
+</table><br>
+
+<span class="tooltiptext">Click on an image thumbnail to go to the detailed report for that image.</span></div>
+</body>
+</html>

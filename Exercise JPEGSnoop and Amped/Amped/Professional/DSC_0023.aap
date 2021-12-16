@@ -1,0 +1,350 @@
+{
+   "Name" : "Amped Authenticate Project",
+   "Version" : "1.0",
+   "Properties" : {
+      "Case" : "Dock",
+      "Author" : "Amped Team",
+      "Description" : "Analyze the image and gather elements that are relevant to confirm or disprove image integrity and authenticity.",
+      "Report Max Image Width" : 600,
+      "Report Min Image Width" : 0
+   },
+   "Bookmarks" : [
+      {
+         "Id" : 0,
+         "Name" : "Instructions",
+         "Description" : "For all the samples, including this one, the instructions for the case are written in the Project Properties. You can view them by clicking on the rightmost button on the top of this panel, or with the keyboard shortcut CTRL + P.",
+         "Level" : 1,
+         "isFolder" : true,
+         "hidePostProcParams" : 0
+      },
+      {
+         "Id" : 3,
+         "Name" : "Preliminary overview",
+         "Description" : "From a preliminary overview several concerns emerge against image integrity and authenticity, suggesting a more detailed analysis.",
+         "Level" : 1,
+         "isFolder" : true,
+         "hidePostProcParams" : 0
+      },
+      {
+         "Id" : 0,
+         "Name" : "Visual Inspection - DSC_0023",
+         "Description" : "Visual inspection denotes possible inconsistencies of the sharpness/blurriness in the face of the subject.\nThe shadow cast by sunglasses is probably inconsistent with the shadow cast on the neck by the head.",
+         "Level" : 2,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "DSC_0023.jpg",
+            "Hash" : "eb690c0395f0742ed0b7a092de8b611f"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "Visual Inspection",
+         "Parameters" : {
+         },
+         "PostProcessingParameters" : {
+            "Highlights" : 255,
+            "Midtones" : 127,
+            "Shadows" : 0
+         },
+         "status" : "To Check"
+      },
+      {
+         "Id" : 2,
+         "Name" : "File Format - DSC_0023",
+         "Description" : "- Exif last modification date is much later than CreateDate.\n- Traces of processing with Adobe Photoshop CS4 in Exif metadata (processing in Phothoshop also confirmed by 4:4:4 chroma subsampling and optimised Huffman tables).\n",
+         "Level" : 2,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "DSC_0023.jpg",
+            "Hash" : "eb690c0395f0742ed0b7a092de8b611f"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "File Format",
+         "Parameters" : {
+         },
+         "PostProcessingParameters" : {
+         },
+         "status" : "Warning"
+      },
+      {
+         "Id" : 1,
+         "Name" : "Integrity Analysis",
+         "Description" : "Overall, the Integrity Analysis raises very strong concerns about the image integrity. Traces of processing software are present in metadata, quantization tables are not consistent with the declared model.",
+         "Level" : 1,
+         "isFolder" : true,
+         "hidePostProcParams" : 0
+      },
+      {
+         "Id" : 4,
+         "Name" : "EXIF - DSC_0023",
+         "Description" : "- Image metadata contains many XMP tags (typical of Adobe products). \n- There are several Photoshop metadata.\n- Presence of ICC Profile metadata is rather uncommon for camera original images.\n- Exif last modification date is much later than CreateDate.",
+         "Level" : 2,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "DSC_0023.jpg",
+            "Hash" : "eb690c0395f0742ed0b7a092de8b611f"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "EXIF",
+         "Parameters" : {
+         },
+         "PostProcessingParameters" : {
+         },
+         "status" : "Warning"
+      },
+      {
+         "Id" : 5,
+         "Name" : "JPEG QT - DSC_0023",
+         "Description" : "- JPEG Quantization Tables are not compatible with the camera model declared in Exif metadata.\n- Quantization Tables are instead compatible with Adobe Photoshop, that is the last editing software reported in metadata.",
+         "Level" : 2,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "DSC_0023.jpg",
+            "Hash" : "eb690c0395f0742ed0b7a092de8b611f"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "JPEG QT",
+         "Parameters" : {
+         },
+         "PostProcessingParameters" : {
+         },
+         "status" : "Warning"
+      },
+      {
+         "Id" : 5,
+         "Name" : "Thumbnail - Thumbnail - DSC_0023",
+         "Description" : "Thumbnail is present and consistent with the image content, as expected.",
+         "Level" : 2,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "DSC_0023.jpg",
+            "Hash" : "eb690c0395f0742ed0b7a092de8b611f"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "Thumbnail",
+         "Parameters" : {
+            "Output" : "Thumbnail"
+         },
+         "PostProcessingParameters" : {
+         },
+         "status" : "Undefined"
+      },
+      {
+         "Id" : 2,
+         "Name" : "Global Processing Analysis",
+         "Description" : "Overall, the Global Processing Analysis highlights that the image underwent two JPEG compressions, with the quality of the last one being 96/100 (as observed by current JPEG Quantization Tables) and the previous one probably being close to 70 (see JPEG Ghost Plot bookmark).",
+         "Level" : 1,
+         "isFolder" : true,
+         "hidePostProcParams" : 0
+      },
+      {
+         "Id" : 3,
+         "Name" : "DCT Plot - Intensity-Quantized-1 - DSC_0023",
+         "Description" : "The comb-shaped DCT Plot indicates that the image has likely been JPEG compressed more than once.\nThe fact that some bars are almost empty also suggests that the last compression quality was higher than the previous one.",
+         "Level" : 2,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "DSC_0023.jpg",
+            "Hash" : "eb690c0395f0742ed0b7a092de8b611f"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "DCT Plot",
+         "Parameters" : {
+            "Output Domain" : "Intensity",
+            "DCT Coefficients" : "Quantized",
+            "DCT Frequency" : 1
+         },
+         "PostProcessingParameters" : {
+         },
+         "status" : "Warning"
+      },
+      {
+         "Id" : 4,
+         "Name" : "JPEG Ghosts Plot - DSC_0023",
+         "Description" : "A local minimum is observed at quality 69 in the JPEG Ghost Plot. This suggests that the quality factor of the previous JPEG compression could be close to 70 (better viewed in log-scale, right click on the plot and select \"Log-scale Y\").",
+         "Level" : 2,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "DSC_0023.jpg",
+            "Hash" : "eb690c0395f0742ed0b7a092de8b611f"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "JPEG Ghosts Plot",
+         "Parameters" : {
+         },
+         "PostProcessingParameters" : {
+         },
+         "status" : "Warning"
+      },
+      {
+         "Id" : 6,
+         "Name" : "Correlation Plot - Horizontal-Nearest-Show - DSC_0023",
+         "Description" : "The Correlation Plot shows prominent peaks superposed to blue vertical lines. This is typical of JPEG images and brings in no additional information. The central peak at 0.5 on the x-axis is superposed to a green line. Peaks on the green lines are normally due to standard internal camera processing and are not suspicious\nTherefore, the correlation Plot does not highlight any anomaly. In particular, absence of relevant peaks (besides those on blue and green lines) suggests that the image has NOT been resized nor rotated by fractional amounts.",
+         "Level" : 2,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "DSC_0023.jpg",
+            "Hash" : "eb690c0395f0742ed0b7a092de8b611f"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "Correlation Plot",
+         "Parameters" : {
+            "Direction" : "Horizontal",
+            "Algorithm" : "Nearest",
+            "Helper Lines" : "Show"
+         },
+         "PostProcessingParameters" : {
+         },
+         "status" : "OK"
+      },
+      {
+         "Id" : 7,
+         "Name" : "Local Tampering Analysis",
+         "Description" : "",
+         "Level" : 1,
+         "isFolder" : true,
+         "hidePostProcParams" : 0
+      },
+      {
+         "Id" : 8,
+         "Name" : "ELA - MSE-70 - DSC_0023",
+         "Description" : "ELA analysis suggests the subject's face could have been tampered with. \nThe shirt also stands out in the map but, being rather textured, this is more likely to be a false positive for this filter.",
+         "Level" : 2,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "DSC_0023.jpg",
+            "Hash" : "eb690c0395f0742ed0b7a092de8b611f"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "ELA",
+         "Parameters" : {
+            "Mode" : "MSE",
+            "Quality (0 = auto)" : 70
+         },
+         "PostProcessingParameters" : {
+            "Scale (0 = auto)" : 0
+         },
+         "status" : "To Check"
+      },
+      {
+         "Id" : 9,
+         "Name" : "DCT Map - Y-30-63 - DSC_0023",
+         "Description" : "The DCT Map shows that the face of the subject has a significantly different amount of energy in high-frequency DCT coefficients.",
+         "Level" : 2,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "DSC_0023.jpg",
+            "Hash" : "eb690c0395f0742ed0b7a092de8b611f"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "DCT Map",
+         "Parameters" : {
+            "Channel" : "Y",
+            "First DCT Mode" : 30,
+            "Last DCT Mode" : 63
+         },
+         "PostProcessingParameters" : {
+            "Scale (0 = auto)" : 0
+         },
+         "status" : "To Check"
+      },
+      {
+         "Id" : 10,
+         "Name" : "Blocking Artifacts - 64 - DSC_0023",
+         "Description" : "The Blocking Artifact analysis strongly suggests that the subject's face has been tampered with. Indeed, that region stands out clearly in the output map compared to the rest of the image.",
+         "Level" : 2,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "DSC_0023.jpg",
+            "Hash" : "eb690c0395f0742ed0b7a092de8b611f"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "Blocking Artifacts",
+         "Parameters" : {
+            "Number of DCT Modes" : 64
+         },
+         "PostProcessingParameters" : {
+            "Map Type" : "Color",
+            "Show Saturation" : "Off"
+         },
+         "status" : "Warning"
+      },
+      {
+         "Id" : 11,
+         "Name" : "ADJPEG - EM--1-12 - DSC_0023",
+         "Description" : "The Aligned Double JPEG forgery localization map clearly suggests that the face of the subject has been manipulated. Region marked in green in the map show traces of double aligned JPEG compression (as expected, since we know from the Global Processing Analysis that the image has been compressed twice), while pixels in the face do not show such traces.\nThis fact is compatible with the hypothesis that, between the two compressions, pixels of the face have been tampered with.",
+         "Level" : 2,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "DSC_0023.jpg",
+            "Hash" : "eb690c0395f0742ed0b7a092de8b611f"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "ADJPEG",
+         "Parameters" : {
+            "Mixture Estimation" : "EM",
+            "First DCT Mode (-1 = auto)" : -1,
+            "Number of DCT Modes" : 12
+         },
+         "PostProcessingParameters" : {
+            "Map Type" : "Color",
+            "Show Saturation" : "Off"
+         },
+         "status" : "Warning"
+      },
+      {
+         "Id" : 13,
+         "Name" : "Conclusions",
+         "Description" : "Based on the available findings, the analyzed image has probably been:\n1) acquired using a Samsung GT-I9105P device () and saved as JPEG\n2) altered using Adobe Photoshop CS4 to modify the face of the subject\n3) after modifications were made, the manipulated image was saved as JPEG using Photoshop setting \"Save as 11\".",
+         "Level" : 1,
+         "isFolder" : true,
+         "hidePostProcParams" : 0
+      }
+   ]
+}

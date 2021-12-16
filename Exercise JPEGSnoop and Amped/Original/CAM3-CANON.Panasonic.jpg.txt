@@ -1,0 +1,918 @@
+
+JPEGsnoop 1.8.0 by Calvin Hass
+  http://www.impulseadventure.com/photo/
+  -------------------------------------
+
+  Filename: [E:\University\Research 2\Exercise JPEGSnoop and Amped\Original\CAM3-CANON.Panasonic.jpg]
+  Filesize: [10373611] Bytes
+
+Start Offset: 0x00000000
+*** Marker: SOI (xFFD8) ***
+  OFFSET: 0x00000000
+ 
+*** Marker: APP1 (xFFE1) ***
+  OFFSET: 0x00000002
+  Length          = 15245
+  Identifier      = [Exif]
+  Identifier TIFF = 0x[49492A00 08000000]
+  Endian          = Intel (little)
+  TAG Mark x002A  = 0x002A
+
+  EXIF IFD0 @ Absolute 0x00000014
+    Dir Length = 0x0008
+    [Make                                ] = "Panasonic"
+    [Model                               ] = "DC-S1R"
+    [XResolution                         ] = 300/1
+    [YResolution                         ] = 300/1
+    [ResolutionUnit                      ] = Inch
+    [Software                            ] = "Adobe Photoshop Camera Raw 12.4 (Macintosh)"
+    [DateTime                            ] = "2021:04:26 16:17:46"
+    [ExifOffset                          ] = @ 0x00D0
+    Offset to Next IFD = 0x0000036C
+
+  EXIF IFD1 @ Absolute 0x00000378
+    Dir Length = 0x0006
+    [Compression                         ] = JPEG
+    [XResolution                         ] = 72/1
+    [YResolution                         ] = 72/1
+    [ResolutionUnit                      ] = Inch
+    [JpegIFOffset                        ] = @ +0x03CA = @ 0x03D6
+    [JpegIFByteCount                     ] = 0x[000037BB] / 14267
+    Offset to Next IFD = 0x00000000
+
+  EXIF SubIFD @ Absolute 0x000000DC
+    Dir Length = 0x0028
+    [ExposureTime                        ] = 1/6400 s
+    [FNumber                             ] = F1.4
+    [ExposureProgram                     ] = Aperture priority
+    [ISOSpeedRatings                     ] = 100
+    [ExifVersion                         ] = 02.31
+    [DateTimeOriginal                    ] = "2021:04:26 14:21:54"
+    [DateTimeDigitized                   ] = "2021:04:26 14:21:54"
+    [ShutterSpeedValue                   ] = 12643856/1000000
+    [ApertureValue                       ] = 970854/1000000
+    [ExposureBiasValue                   ] = 0.00 eV
+    [MaxApertureValue                    ] = 256/256
+    [MeteringMode                        ] = Pattern
+    [LightSource                         ] = unknown
+    [Flash                               ] = Flash did not fire
+    [FocalLength                         ] = 35 mm
+    [SubSecTimeOriginal                  ] = "005"
+    [SubSecTimeDigitized                 ] = "005"
+    [ColorSpace                          ] = sRGB
+    [FocalPlaneXResolution               ] = 76189808/32768
+    [FocalPlaneYResolution               ] = 76189808/32768
+    [FocalPlaneResolutionUnit            ] = Centimeter
+    [SensingMethod                       ] = One-chip color area sensor
+    [FileSource                          ] = DSC
+    [SceneType                           ] = A directly photographed image
+    [CustomRendered                      ] = Normal process
+    [ExposureMode                        ] = Auto exposure
+    [WhiteBalance                        ] = Auto white balance
+    [DigitalZoomRatio                    ] = 0/10
+    [FocalLengthIn35mmFilm               ] = 35
+    [SceneCaptureType                    ] = Standard
+    [GainControl                         ] = 0
+    [Contrast                            ] = 0
+    [Saturation                          ] = 0
+    [Sharpness                           ] = 0
+ 
+*** Marker: APP13 (xFFED) ***
+  OFFSET: 0x00003B91
+  Length          = 14460
+  Identifier      = [Photoshop 3.0]
+      8BIM: [0x03ED] Name="" Len=[0x0010] DefinedName="ResolutionInfo structure"
+        Horizontal resolution                              = 300 pixels per inch
+        Width unit                                         = inch
+        Vertical resolution                                = 300 pixels per inch
+        Height unit                                        = inch
+      8BIM: [0x0404] Name="" Len=[0x0044] DefinedName="IPTC-NAA record"
+        IPTC [001:090] Coded Character Set                 = "%G"
+        IPTC [002:000] Record Version                      = 4
+        IPTC [002:055] Date Created                        = "20210426"
+        IPTC [002:060] Time Created                        = "142154"
+        IPTC [002:062] Digital Creation Date               = "20210426"
+        IPTC [002:063] Digital Creation Time               = "142154-0800"
+      8BIM: [0x040C] Name="" Len=[0x37D7] DefinedName="Thumbnail resources"
+        Format                                             = 1 
+        Width of thumbnail                                 = 256 pixels
+        Height of thumbnail                                = 171 pixels
+        Widthbytes                                         = 768 bytes
+        Total size                                         = 131328 bytes
+        Size after compression                             = 14267 bytes
+        Bits per pixel                                     = 24 bits
+        Number of planes                                   = 1 
+        JFIF data                                          @ 0x00003C37
+      8BIM: [0x0425] Name="" Len=[0x0010] DefinedName="Caption digest"
+        Caption digest                                     =  | 0xF3 E6 3C 7B 1F A1 4B A4 74 61 97 D5 55 11 49 77  | ..<{..K.ta..U.Iw
+ 
+*** Marker: APP2 (xFFE2) ***
+  OFFSET: 0x0000740F
+  Length          = 3160
+  Identifier      = [ICC_PROFILE]
+    ICC Profile:
+      Marker Number = 1 of 1
+        Profile Size                      : 3144 bytes
+        Preferred CMM Type                : 'Lino' (0x4C696E6F)
+        Profile Version                   : 0.2.1.0 (0x02100000)
+        Profile Device/Class              : Display Device profile ('mntr' (0x6D6E7472))
+        Data Colour Space                 : rgbData ('RGB ' (0x52474220))
+        Profile connection space (PCS)    : 'XYZ ' (0x58595A20)
+        Profile creation date             : 1998-02-09 06:49:00
+        Profile file signature            : 'acsp' (0x61637370)
+        Primary platform                  : Microsoft Corporation ('MSFT' (0x4D534654))
+        Profile flags                     : 0x00000000
+        Profile flags                       > Profile not embedded
+        Profile flags                       > Profile can't be used independently of embedded
+        Device Manufacturer               : 'IEC ' (0x49454320)
+        Device Model                      : 'sRGB' (0x73524742)
+        Device attributes                 : 0x00000000_00000000
+        Device attributes                   > Reflective
+        Device attributes                   > Glossy
+        Device attributes                   > Media polarity = negative
+        Device attributes                   > Black & white media
+        Rendering intent                  : Perceptual
+        Profile creator                   : 'HP  ' (0x48502020)
+        Profile ID                        : 0x00000000_00000000_00000000_00000000
+ 
+*** Marker: APP1 (xFFE1) ***
+  OFFSET: 0x00008069
+  Length          = 11268
+  Identifier      = [http://ns.adobe.com/xap/1.0/]
+    XMP = 
+          |<?xpacket begin="ï»?" id="W5M0MpCehiHzreSzNTczkc9d"?>
+          |<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+          | <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+          |  <rdf:Description rdf:about=""
+          |    xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+          |    xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+          |    xmlns:photomechanic="http://ns.camerabits.com/photomechanic/1.0/"
+          |    xmlns:aux="http://ns.adobe.com/exif/1.0/aux/"
+          |    xmlns:exifEX="http://cipa.jp/exif/1.0/"
+          |    xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+          |    xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+          |    xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"
+          |    xmlns:dc="http://purl.org/dc/elements/1.1/"
+          |    xmlns:crs="http://ns.adobe.com/camera-raw-settings/1.0/"
+          |   photoshop:DateCreated="2021-04-26T14:21:54.005"
+          |   xmp:CreateDate="2021-04-26T14:21:54.005-08:00"
+          |   xmp:Label="Winner alt"
+          |   xmp:ModifyDate="2021-04-26T16:17:46-07:00"
+          |   xmp:CreatorTool="Adobe Photoshop Camera Raw 12.4 (Macintosh)"
+          |   xmp:MetadataDate="2021-04-26T16:17:46-07:00"
+          |   photomechanic:ColorClass="2"
+          |   photomechanic:Tagged="True"
+          |   photomechanic:Prefs="1:2:0:000388"
+          |   photomechanic:PMVersion="PM5"
+          |   aux:ImageNumber="388"
+          |   aux:SerialNumber="WJ-PP001368"
+          |   aux:Lens="35mm F1.4 DG DN | Art 021"
+          |   aux:LensSerialNumber="N/A"
+          |   aux:DistortionCorrectionAlreadyApplied="True"
+          |   aux:LateralChromaticAberrationCorrectionAlreadyApplied="True"
+          |   exifEX:LensModel="35mm F1.4 DG DN | Art 021"
+          |   xmpMM:DocumentID="xmp.did:3889fe62-74b6-41b3-aafc-053730e1aba7"
+          |   xmpMM:OriginalDocumentID="6772E395CA2C052731B74196F5509064"
+          |   xmpMM:InstanceID="xmp.iid:3889fe62-74b6-41b3-aafc-053730e1aba7"
+          |   dc:format="image/jpeg"
+          |   crs:RawFileName="P1020388.RW2"
+          |   crs:Version="12.4"
+          |   crs:ProcessVersion="11.0"
+          |   crs:WhiteBalance="As Shot"
+          |   crs:Temperature="5000"
+          |   crs:Tint="+15"
+          |   crs:Saturation="0"
+          |   crs:Sharpness="40"
+          |   crs:LuminanceSmoothing="0"
+          |   crs:ColorNoiseReduction="25"
+          |   crs:VignetteAmount="0"
+          |   crs:ShadowTint="0"
+          |   crs:RedHue="0"
+          |   crs:RedSaturation="0"
+          |   crs:GreenHue="0"
+          |   crs:GreenSaturation="0"
+          |   crs:BlueHue="0"
+          |   crs:BlueSaturation="0"
+          |   crs:Vibrance="0"
+          |   crs:HueAdjustmentRed="0"
+          |   crs:HueAdjustmentOrange="0"
+          |   crs:HueAdjustmentYellow="0"
+          |   crs:HueAdjustmentGreen="0"
+          |   crs:HueAdjustmentAqua="0"
+          |   crs:HueAdjustmentBlue="0"
+          |   crs:HueAdjustmentPurple="0"
+          |   crs:HueAdjustmentMagenta="0"
+          |   crs:SaturationAdjustmentRed="0"
+          |   crs:SaturationAdjustmentOrange="0"
+          |   crs:SaturationAdjustmentYellow="0"
+          |   crs:SaturationAdjustmentGreen="0"
+          |   crs:SaturationAdjustmentAqua="0"
+          |   crs:SaturationAdjustmentBlue="0"
+          |   crs:SaturationAdjustmentPurple="0"
+          |   crs:SaturationAdjustmentMagenta="0"
+          |   crs:LuminanceAdjustmentRed="0"
+          |   crs:LuminanceAdjustmentOrange="0"
+          |   crs:LuminanceAdjustmentYellow="0"
+          |   crs:LuminanceAdjustmentGreen="0"
+          |   crs:LuminanceAdjustmentAqua="0"
+          |   crs:LuminanceAdjustmentBlue="0"
+          |   crs:LuminanceAdjustmentPurple="0"
+          |   crs:LuminanceAdjustmentMagenta="0"
+          |   crs:SplitToningShadowHue="0"
+          |   crs:SplitToningShadowSaturation="0"
+          |   crs:SplitToningHighlightHue="0"
+          |   crs:SplitToningHighlightSaturation="0"
+          |   crs:SplitToningBalance="0"
+          |   crs:ParametricShadows="0"
+          |   crs:ParametricDarks="0"
+          |   crs:ParametricLights="0"
+          |   crs:ParametricHighlights="0"
+          |   crs:ParametricShadowSplit="25"
+          |   crs:ParametricMidtoneSplit="50"
+          |   crs:ParametricHighlightSplit="75"
+          |   crs:SharpenRadius="+1.0"
+          |   crs:SharpenDetail="25"
+          |   crs:SharpenEdgeMasking="0"
+          |   crs:PostCropVignetteAmount="0"
+          |   crs:GrainAmount="0"
+          |   crs:ColorNoiseReductionDetail="50"
+          |   crs:ColorNoiseReductionSmoothness="50"
+          |   crs:LensProfileEnable="0"
+          |   crs:LensManualDistortionAmount="0"
+          |   crs:PerspectiveVertical="0"
+          |   crs:PerspectiveHorizontal="0"
+          |   crs:PerspectiveRotate="0.0"
+          |   crs:PerspectiveScale="100"
+          |   crs:PerspectiveAspect="0"
+          |   crs:PerspectiveUpright="0"
+          |   crs:PerspectiveX="0.00"
+          |   crs:PerspectiveY="0.00"
+          |   crs:AutoLateralCA="0"
+          |   crs:Exposure2012="+1.00"
+          |   crs:Contrast2012="0"
+          |   crs:Highlights2012="-74"
+          |   crs:Shadows2012="+32"
+          |   crs:Whites2012="+17"
+          |   crs:Blacks2012="-38"
+          |   crs:Clarity2012="0"
+          |   crs:DefringePurpleAmount="0"
+          |   crs:DefringePurpleHueLo="30"
+          |   crs:DefringePurpleHueHi="70"
+          |   crs:DefringeGreenAmount="0"
+          |   crs:DefringeGreenHueLo="40"
+          |   crs:DefringeGreenHueHi="60"
+          |   crs:Dehaze="0"
+          |   crs:Texture="0"
+          |   crs:ToneMapStrength="0"
+          |   crs:ConvertToGrayscale="False"
+          |   crs:OverrideLookVignette="False"
+          |   crs:ToneCurveName="Medium Contrast"
+          |   crs:ToneCurveName2012="Linear"
+          |   crs:CameraProfile="Camera Standard"
+          |   crs:CameraProfileDigest="878C1984763112982A9F00D2BE956F9F"
+          |   crs:LensProfileSetup="LensDefaults"
+          |   crs:UprightVersion="151388160"
+          |   crs:UprightCenterMode="0"
+          |   crs:UprightCenterNormX="0.5"
+          |   crs:UprightCenterNormY="0.5"
+          |   crs:UprightFocalMode="0"
+          |   crs:UprightFocalLength35mm="35"
+          |   crs:UprightPreview="False"
+          |   crs:UprightTransformCount="6"
+          |   crs:UprightFourSegmentsCount="0"
+          |   crs:HasSettings="True"
+          |   crs:CropTop="0"
+          |   crs:CropLeft="0"
+          |   crs:CropBottom="1"
+          |   crs:CropRight="1"
+          |   crs:CropAngle="0"
+          |   crs:CropConstrainToWarp="0"
+          |   crs:HasCrop="True"
+          |   crs:AlreadyApplied="True">
+          |   <xmpMM:History>
+          |    <rdf:Seq>
+          |     <rdf:li
+          |      stEvt:action="derived"
+          |      stEvt:parameters="converted from image/x-panasonic-raw to image/jpeg, saved to new location"/>
+          |     <rdf:li
+          |      stEvt:action="saved"
+          |      stEvt:instanceID="xmp.iid:3889fe62-74b6-41b3-aafc-053730e1aba7"
+          |      stEvt:when="2021-04-26T16:17:46-07:00"
+          |      stEvt:softwareAgent="Adobe Photoshop Camera Raw 12.4 (Macintosh)"
+          |      stEvt:changed="/"/>
+          |    </rdf:Seq>
+          |   </xmpMM:History>
+          |   <xmpMM:DerivedFrom
+          |    stRef:documentID="6772E395CA2C052731B74196F5509064"
+          |    stRef:originalDocumentID="6772E395CA2C052731B74196F5509064"/>
+          |   <crs:ToneCurve>
+          |    <rdf:Seq>
+          |     <rdf:li>0, 0</rdf:li>
+          |     <rdf:li>32, 22</rdf:li>
+          |     <rdf:li>64, 56</rdf:li>
+          |     <rdf:li>128, 128</rdf:li>
+          |     <rdf:li>192, 196</rdf:li>
+          |     <rdf:li>255, 255</rdf:li>
+          |    </rdf:Seq>
+          |   </crs:ToneCurve>
+          |   <crs:ToneCurveRed>
+          |    <rdf:Seq>
+          |     <rdf:li>0, 0</rdf:li>
+          |     <rdf:li>255, 255</rdf:li>
+          |    </rdf:Seq>
+          |   </crs:ToneCurveRed>
+          |   <crs:ToneCurveGreen>
+          |    <rdf:Seq>
+          |     <rdf:li>0, 0</rdf:li>
+          |     <rdf:li>255, 255</rdf:li>
+          |    </rdf:Seq>
+          |   </crs:ToneCurveGreen>
+          |   <crs:ToneCurveBlue>
+          |    <rdf:Seq>
+          |     <rdf:li>0, 0</rdf:li>
+          |     <rdf:li>255, 255</rdf:li>
+          |    </rdf:Seq>
+          |   </crs:ToneCurveBlue>
+          |   <crs:ToneCurvePV2012>
+          |    <rdf:Seq>
+          |     <rdf:li>0, 0</rdf:li>
+          |     <rdf:li>255, 255</rdf:li>
+          |    </rdf:Seq>
+          |   </crs:ToneCurvePV2012>
+          |   <crs:ToneCurvePV2012Red>
+          |    <rdf:Seq>
+          |     <rdf:li>0, 0</rdf:li>
+          |     <rdf:li>255, 255</rdf:li>
+          |    </rdf:Seq>
+          |   </crs:ToneCurvePV2012Red>
+          |   <crs:ToneCurvePV2012Green>
+          |    <rdf:Seq>
+          |     <rdf:li>0, 0</rdf:li>
+          |     <rdf:li>255, 255</rdf:li>
+          |    </rdf:Seq>
+          |   </crs:ToneCurvePV2012Green>
+          |   <crs:ToneCurvePV2012Blue>
+          |    <rdf:Seq>
+          |     <rdf:li>0, 0</rdf:li>
+          |     <rdf:li>255, 255</rdf:li>
+          |    </rdf:Seq>
+          |   </crs:ToneCurvePV2012Blue>
+          |   <crs:Look
+          |    crs:Name=""/>
+          |  </rdf:Description>
+          | </rdf:RDF>
+          |</x:xmpmeta>
+ 
+*** Marker: DQT (xFFDB) ***
+  Define a Quantization Table.
+  OFFSET: 0x0000AC6F
+  Table length = 132
+  ----
+  Precision=8 bits
+  Destination ID=0 (Luminance)
+    DQT, Row #0:   1   1   1   2   3   3   4   5 
+    DQT, Row #1:   1   1   1   2   3   4   4   6 
+    DQT, Row #2:   1   1   2   3   4   4   5   7 
+    DQT, Row #3:   2   2   3   4   4   5   7   8 
+    DQT, Row #4:   3   3   4   4   5   7   8   8 
+    DQT, Row #5:   3   4   4   5   7   8   8   8 
+    DQT, Row #6:   4   4   5   7   8   8   8   8 
+    DQT, Row #7:   5   6   7   8   8   8   8   8 
+    Approx quality factor = 95.48 (scaling=9.04 variance=6.24)
+  ----
+  Precision=8 bits
+  Destination ID=1 (Chrominance)
+    DQT, Row #0:   1   2   4   7   8   8   8   8 
+    DQT, Row #1:   2   2   4   7   8   8   8   8 
+    DQT, Row #2:   4   4   7   8   8   8   8   8 
+    DQT, Row #3:   7   7   8   8   8   8   8   8 
+    DQT, Row #4:   8   8   8   8   8   8   8   8 
+    DQT, Row #5:   8   8   8   8   8   8   8   8 
+    DQT, Row #6:   8   8   8   8   8   8   8   8 
+    DQT, Row #7:   8   8   8   8   8   8   8   8 
+    Approx quality factor = 95.49 (scaling=9.02 variance=5.44)
+ 
+*** Marker: DRI (Restart Interval) (xFFDD) ***
+  OFFSET: 0x0000ACF5
+  Length     = 4
+  interval   = 1046
+ 
+*** Marker: APP14 (xFFEE) ***
+  OFFSET: 0x0000ACFB
+  Length            = 14
+  DCTEncodeVersion  = 100
+  APP14Flags0       = 49152
+  APP14Flags1       = 0
+  ColorTransform    = 1 [YCbCr]
+ 
+*** Marker: SOF0 (Baseline DCT) (xFFC0) ***
+  OFFSET: 0x0000AD0B
+  Frame header length = 17
+  Precision = 8
+  Number of Lines = 5584
+  Samples per Line = 8368
+  Image Size = 8368 x 5584
+  Raw Image Orientation = Landscape
+  Number of Img components = 3
+    Component[1]: ID=0x00, Samp Fac=0x11 (Subsamp 1 x 1), Quant Tbl Sel=0x00 (Lum: Y)
+    Component[2]: ID=0x01, Samp Fac=0x11 (Subsamp 1 x 1), Quant Tbl Sel=0x01 (Chrom: Cb)
+    Component[3]: ID=0x02, Samp Fac=0x11 (Subsamp 1 x 1), Quant Tbl Sel=0x01 (Chrom: Cr)
+ 
+*** Marker: DHT (Define Huffman Table) (xFFC4) ***
+  OFFSET: 0x0000AD1E
+  Huffman table length = 200
+  ----
+  Destination ID = 0
+  Class = 0 (DC / Lossless Table)
+    Codes of length 01 bits (000 total): 
+    Codes of length 02 bits (001 total): 04 
+    Codes of length 03 bits (005 total): 01 02 03 05 06 
+    Codes of length 04 bits (001 total): 00 
+    Codes of length 05 bits (001 total): 07 
+    Codes of length 06 bits (001 total): 08 
+    Codes of length 07 bits (001 total): 09 
+    Codes of length 08 bits (001 total): 0A 
+    Codes of length 09 bits (001 total): 0B 
+    Codes of length 10 bits (000 total): 
+    Codes of length 11 bits (000 total): 
+    Codes of length 12 bits (000 total): 
+    Codes of length 13 bits (000 total): 
+    Codes of length 14 bits (000 total): 
+    Codes of length 15 bits (000 total): 
+    Codes of length 16 bits (000 total): 
+    Total number of codes: 012
+
+  Expanded Form of Codes:
+    Codes of length 02 bits:
+      00 = 04                            (Total Len =  6)
+    Codes of length 03 bits:
+      010 = 01                           (Total Len =  4)
+      011 = 02                           (Total Len =  5)
+      100 = 03                           (Total Len =  6)
+      101 = 05                           (Total Len =  8)
+      110 = 06                           (Total Len =  9)
+    Codes of length 04 bits:
+      1110 = 00                          (Total Len =  4)
+    Codes of length 05 bits:
+      11110 = 07                         (Total Len = 12)
+    Codes of length 06 bits:
+      111110 = 08                        (Total Len = 14)
+    Codes of length 07 bits:
+      1111110 = 09                       (Total Len = 16)
+    Codes of length 08 bits:
+      11111110 = 0A                      (Total Len = 18)
+    Codes of length 09 bits:
+      111111110 = 0B                     (Total Len = 20)
+
+  ----
+  Destination ID = 1
+  Class = 0 (DC / Lossless Table)
+    Codes of length 01 bits (000 total): 
+    Codes of length 02 bits (003 total): 00 01 02 
+    Codes of length 03 bits (001 total): 03 
+    Codes of length 04 bits (001 total): 04 
+    Codes of length 05 bits (001 total): 05 
+    Codes of length 06 bits (001 total): 06 
+    Codes of length 07 bits (001 total): 07 
+    Codes of length 08 bits (001 total): 08 
+    Codes of length 09 bits (001 total): 09 
+    Codes of length 10 bits (000 total): 
+    Codes of length 11 bits (000 total): 
+    Codes of length 12 bits (000 total): 
+    Codes of length 13 bits (000 total): 
+    Codes of length 14 bits (000 total): 
+    Codes of length 15 bits (000 total): 
+    Codes of length 16 bits (000 total): 
+    Total number of codes: 010
+
+  Expanded Form of Codes:
+    Codes of length 02 bits:
+      00 = 00                            (Total Len =  2)
+      01 = 01                            (Total Len =  3)
+      10 = 02                            (Total Len =  4)
+    Codes of length 03 bits:
+      110 = 03                           (Total Len =  6)
+    Codes of length 04 bits:
+      1110 = 04                          (Total Len =  8)
+    Codes of length 05 bits:
+      11110 = 05                         (Total Len = 10)
+    Codes of length 06 bits:
+      111110 = 06                        (Total Len = 12)
+    Codes of length 07 bits:
+      1111110 = 07                       (Total Len = 14)
+    Codes of length 08 bits:
+      11111110 = 08                      (Total Len = 16)
+    Codes of length 09 bits:
+      111111110 = 09                     (Total Len = 18)
+
+  ----
+  Destination ID = 0
+  Class = 1 (AC Table)
+    Codes of length 01 bits (000 total): 
+    Codes of length 02 bits (002 total): 01 02 
+    Codes of length 03 bits (001 total): 11 
+    Codes of length 04 bits (003 total): 00 03 21 
+    Codes of length 05 bits (002 total): 12 31 
+    Codes of length 06 bits (004 total): 04 41 51 61 
+    Codes of length 07 bits (004 total): 05 13 22 71 
+    Codes of length 08 bits (003 total): 32 81 91 
+    Codes of length 09 bits (006 total): 06 A1 B1 C1 D1 F0 
+    Codes of length 10 bits (006 total): 07 14 23 42 E1 F1 
+    Codes of length 11 bits (002 total): 52 62 
+    Codes of length 12 bits (001 total): 08 
+    Codes of length 13 bits (002 total): 15 33 
+    Codes of length 14 bits (001 total): 72 
+    Codes of length 15 bits (002 total): 09 24 
+    Codes of length 16 bits (023 total): 82 16 43 92 A2 B2 C2 34 53 17 D2 25 E2 18 63 44 
+                                         F2 26 73 35 54 74 84 
+    Total number of codes: 062
+
+  Expanded Form of Codes:
+    Codes of length 02 bits:
+      00 = 01                            (Total Len =  3)
+      01 = 02                            (Total Len =  4)
+    Codes of length 03 bits:
+      100 = 11                           (Total Len =  4)
+    Codes of length 04 bits:
+      1010 = 00 (EOB)                    (Total Len =  4)
+      1011 = 03                          (Total Len =  7)
+      1100 = 21                          (Total Len =  5)
+    Codes of length 05 bits:
+      11010 = 12                         (Total Len =  7)
+      11011 = 31                         (Total Len =  6)
+    Codes of length 06 bits:
+      111000 = 04                        (Total Len = 10)
+      111001 = 41                        (Total Len =  7)
+      111010 = 51                        (Total Len =  7)
+      111011 = 61                        (Total Len =  7)
+    Codes of length 07 bits:
+      1111000 = 05                       (Total Len = 12)
+      1111001 = 13                       (Total Len = 10)
+      1111010 = 22                       (Total Len =  9)
+      1111011 = 71                       (Total Len =  8)
+    Codes of length 08 bits:
+      11111000 = 32                      (Total Len = 10)
+      11111001 = 81                      (Total Len =  9)
+      11111010 = 91                      (Total Len =  9)
+    Codes of length 09 bits:
+      111110110 = 06                     (Total Len = 15)
+      111110111 = A1                     (Total Len = 10)
+      111111000 = B1                     (Total Len = 10)
+      111111001 = C1                     (Total Len = 10)
+      111111010 = D1                     (Total Len = 10)
+      111111011 = F0 (ZRL)               (Total Len =  9)
+    Codes of length 10 bits:
+      1111111000 = 07                    (Total Len = 17)
+      1111111001 = 14                    (Total Len = 14)
+      1111111010 = 23                    (Total Len = 13)
+      1111111011 = 42                    (Total Len = 12)
+      1111111100 = E1                    (Total Len = 11)
+      1111111101 = F1                    (Total Len = 11)
+    Codes of length 11 bits:
+      11111111100 = 52                   (Total Len = 13)
+      11111111101 = 62                   (Total Len = 13)
+    Codes of length 12 bits:
+      111111111100 = 08                  (Total Len = 20)
+    Codes of length 13 bits:
+      1111111111010 = 15                 (Total Len = 18)
+      1111111111011 = 33                 (Total Len = 16)
+    Codes of length 14 bits:
+      11111111111000 = 72                (Total Len = 16)
+    Codes of length 15 bits:
+      111111111110010 = 09               (Total Len = 24)
+      111111111110011 = 24               (Total Len = 19)
+    Codes of length 16 bits:
+      1111111111101000 = 82              (Total Len = 18)
+      1111111111101001 = 16              (Total Len = 22)
+      1111111111101010 = 43              (Total Len = 19)
+      1111111111101011 = 92              (Total Len = 18)
+      1111111111101100 = A2              (Total Len = 18)
+      1111111111101101 = B2              (Total Len = 18)
+      1111111111101110 = C2              (Total Len = 18)
+      1111111111101111 = 34              (Total Len = 20)
+      1111111111110000 = 53              (Total Len = 19)
+      1111111111110001 = 17              (Total Len = 23)
+      1111111111110010 = D2              (Total Len = 18)
+      1111111111110011 = 25              (Total Len = 21)
+      1111111111110100 = E2              (Total Len = 18)
+      1111111111110101 = 18              (Total Len = 24)
+      1111111111110110 = 63              (Total Len = 19)
+      1111111111110111 = 44              (Total Len = 20)
+      1111111111111000 = F2              (Total Len = 18)
+      1111111111111001 = 26              (Total Len = 22)
+      1111111111111010 = 73              (Total Len = 19)
+      1111111111111011 = 35              (Total Len = 21)
+      1111111111111100 = 54              (Total Len = 20)
+      1111111111111101 = 74              (Total Len = 20)
+      1111111111111110 = 84              (Total Len = 20)
+
+  ----
+  Destination ID = 1
+  Class = 1 (AC Table)
+    Codes of length 01 bits (001 total): 00 
+    Codes of length 02 bits (001 total): 01 
+    Codes of length 03 bits (000 total): 
+    Codes of length 04 bits (002 total): 02 11 
+    Codes of length 05 bits (001 total): 03 
+    Codes of length 06 bits (004 total): 04 12 21 31 
+    Codes of length 07 bits (001 total): 05 
+    Codes of length 08 bits (003 total): 13 41 51 
+    Codes of length 09 bits (002 total): 22 61 
+    Codes of length 10 bits (004 total): 06 14 71 F0 
+    Codes of length 11 bits (005 total): 32 81 91 A1 B1 
+    Codes of length 12 bits (003 total): C1 D1 E1 
+    Codes of length 13 bits (004 total): 07 15 23 42 
+    Codes of length 14 bits (000 total): 
+    Codes of length 15 bits (000 total): 
+    Codes of length 16 bits (015 total): F1 33 52 16 62 24 17 34 43 72 25 82 92 53 83 
+    Total number of codes: 046
+
+  Expanded Form of Codes:
+    Codes of length 01 bits:
+      0 = 00 (EOB)                       (Total Len =  1)
+    Codes of length 02 bits:
+      10 = 01                            (Total Len =  3)
+    Codes of length 04 bits:
+      1100 = 02                          (Total Len =  6)
+      1101 = 11                          (Total Len =  5)
+    Codes of length 05 bits:
+      11100 = 03                         (Total Len =  8)
+    Codes of length 06 bits:
+      111010 = 04                        (Total Len = 10)
+      111011 = 12                        (Total Len =  8)
+      111100 = 21                        (Total Len =  7)
+      111101 = 31                        (Total Len =  7)
+    Codes of length 07 bits:
+      1111100 = 05                       (Total Len = 12)
+    Codes of length 08 bits:
+      11111010 = 13                      (Total Len = 11)
+      11111011 = 41                      (Total Len =  9)
+      11111100 = 51                      (Total Len =  9)
+    Codes of length 09 bits:
+      111111010 = 22                     (Total Len = 11)
+      111111011 = 61                     (Total Len = 10)
+    Codes of length 10 bits:
+      1111111000 = 06                    (Total Len = 16)
+      1111111001 = 14                    (Total Len = 14)
+      1111111010 = 71                    (Total Len = 11)
+      1111111011 = F0 (ZRL)              (Total Len = 10)
+    Codes of length 11 bits:
+      11111111000 = 32                   (Total Len = 13)
+      11111111001 = 81                   (Total Len = 12)
+      11111111010 = 91                   (Total Len = 12)
+      11111111011 = A1                   (Total Len = 12)
+      11111111100 = B1                   (Total Len = 12)
+    Codes of length 12 bits:
+      111111111010 = C1                  (Total Len = 13)
+      111111111011 = D1                  (Total Len = 13)
+      111111111100 = E1                  (Total Len = 13)
+    Codes of length 13 bits:
+      1111111111010 = 07                 (Total Len = 20)
+      1111111111011 = 15                 (Total Len = 18)
+      1111111111100 = 23                 (Total Len = 16)
+      1111111111101 = 42                 (Total Len = 15)
+    Codes of length 16 bits:
+      1111111111110000 = F1              (Total Len = 17)
+      1111111111110001 = 33              (Total Len = 19)
+      1111111111110010 = 52              (Total Len = 18)
+      1111111111110011 = 16              (Total Len = 22)
+      1111111111110100 = 62              (Total Len = 18)
+      1111111111110101 = 24              (Total Len = 20)
+      1111111111110110 = 17              (Total Len = 23)
+      1111111111110111 = 34              (Total Len = 20)
+      1111111111111000 = 43              (Total Len = 19)
+      1111111111111001 = 72              (Total Len = 18)
+      1111111111111010 = 25              (Total Len = 21)
+      1111111111111011 = 82              (Total Len = 18)
+      1111111111111100 = 92              (Total Len = 18)
+      1111111111111101 = 53              (Total Len = 19)
+      1111111111111110 = 83              (Total Len = 19)
+
+ 
+*** Marker: SOS (Start of Scan) (xFFDA) ***
+  OFFSET: 0x0000ADE8
+  Scan header length = 12
+  Number of img components = 3
+    Component[1]: selector=0x00, table=0(DC),0(AC)
+    Component[2]: selector=0x01, table=1(DC),1(AC)
+    Component[3]: selector=0x02, table=1(DC),1(AC)
+  Spectral selection = 0 .. 63
+  Successive approximation = 0x00
+
+
+*** Decoding SCAN Data ***
+  OFFSET: 0x0000ADF6
+  Scan Decode Mode: Full IDCT (AC + DC)
+
+  Scan Data encountered marker   0xFFD9 @ 0x009E49E9.0
+
+*** NOTE: YCC Clipped. MCU=( 558, 227) YCC=(  257,  126,  127) Y Overflow @ Offset 0x009E49E8.2
+*** NOTE: YCC Clipped. MCU=( 530, 326) YCC=(  256,  129,  127) Y Overflow @ Offset 0x009E49E8.2
+*** NOTE: YCC Clipped. MCU=( 531, 328) YCC=(  256,  128,  128) Y Overflow @ Offset 0x009E49E8.2
+*** NOTE: YCC Clipped. MCU=( 194, 535) YCC=(   -1,  127,  128) Y Underflow @ Offset 0x009E49E8.2
+*** NOTE: YCC Clipped. MCU=( 200, 536) YCC=(   -1,  128,  128) Y Underflow @ Offset 0x009E49E8.2
+*** NOTE: YCC Clipped. MCU=( 200, 536) YCC=(   -1,  128,  128) Y Underflow @ Offset 0x009E49E8.2
+*** NOTE: YCC Clipped. MCU=( 200, 537) YCC=(   -1,  128,  126) Y Underflow @ Offset 0x009E49E8.2
+*** NOTE: YCC Clipped. MCU=( 199, 538) YCC=(   -1,  127,  128) Y Underflow @ Offset 0x009E49E8.2
+*** NOTE: YCC Clipped. MCU=( 199, 538) YCC=(   -1,  128,  128) Y Underflow @ Offset 0x009E49E8.2
+*** NOTE: YCC Clipped. MCU=( 199, 538) YCC=(   -1,  128,  128) Y Underflow @ Offset 0x009E49E8.2
+    Only reported first 10 instances of this message...
+  Compression stats:
+    Compression Ratio: 13.57:1
+    Bits per pixel:     1.77:1
+
+  Huffman code histogram stats:
+    Huffman Table: (Dest ID: 0, Class: DC)
+      # codes of length 01 bits:        0 (  0%)
+      # codes of length 02 bits:   135314 ( 19%)
+      # codes of length 03 bits:   494094 ( 68%)
+      # codes of length 04 bits:    51854 (  7%)
+      # codes of length 05 bits:    31694 (  4%)
+      # codes of length 06 bits:    12435 (  2%)
+      # codes of length 07 bits:     3754 (  1%)
+      # codes of length 08 bits:      909 (  0%)
+      # codes of length 09 bits:       54 (  0%)
+      # codes of length 10 bits:        0 (  0%)
+      # codes of length 11 bits:        0 (  0%)
+      # codes of length 12 bits:        0 (  0%)
+      # codes of length 13 bits:        0 (  0%)
+      # codes of length 14 bits:        0 (  0%)
+      # codes of length 15 bits:        0 (  0%)
+      # codes of length 16 bits:        0 (  0%)
+
+    Huffman Table: (Dest ID: 1, Class: DC)
+      # codes of length 01 bits:        0 (  0%)
+      # codes of length 02 bits:   982658 ( 67%)
+      # codes of length 03 bits:   237301 ( 16%)
+      # codes of length 04 bits:   127970 (  9%)
+      # codes of length 05 bits:    65517 (  4%)
+      # codes of length 06 bits:    30414 (  2%)
+      # codes of length 07 bits:    12004 (  1%)
+      # codes of length 08 bits:     3720 (  0%)
+      # codes of length 09 bits:      632 (  0%)
+      # codes of length 10 bits:        0 (  0%)
+      # codes of length 11 bits:        0 (  0%)
+      # codes of length 12 bits:        0 (  0%)
+      # codes of length 13 bits:        0 (  0%)
+      # codes of length 14 bits:        0 (  0%)
+      # codes of length 15 bits:        0 (  0%)
+      # codes of length 16 bits:        0 (  0%)
+
+    Huffman Table: (Dest ID: 0, Class: AC)
+      # codes of length 01 bits:        0 (  0%)
+      # codes of length 02 bits:  6493207 ( 50%)
+      # codes of length 03 bits:  1543232 ( 12%)
+      # codes of length 04 bits:  2229892 ( 17%)
+      # codes of length 05 bits:   874265 (  7%)
+      # codes of length 06 bits:   956209 (  7%)
+      # codes of length 07 bits:   413788 (  3%)
+      # codes of length 08 bits:   148466 (  1%)
+      # codes of length 09 bits:   179402 (  1%)
+      # codes of length 10 bits:    74555 (  1%)
+      # codes of length 11 bits:    12335 (  0%)
+      # codes of length 12 bits:     2958 (  0%)
+      # codes of length 13 bits:     3658 (  0%)
+      # codes of length 14 bits:     1943 (  0%)
+      # codes of length 15 bits:     1046 (  0%)
+      # codes of length 16 bits:     2735 (  0%)
+
+    Huffman Table: (Dest ID: 1, Class: AC)
+      # codes of length 01 bits:  1460212 ( 48%)
+      # codes of length 02 bits:   681105 ( 22%)
+      # codes of length 03 bits:        0 (  0%)
+      # codes of length 04 bits:   546709 ( 18%)
+      # codes of length 05 bits:   101908 (  3%)
+      # codes of length 06 bits:   184250 (  6%)
+      # codes of length 07 bits:    11686 (  0%)
+      # codes of length 08 bits:    24673 (  1%)
+      # codes of length 09 bits:     5654 (  0%)
+      # codes of length 10 bits:     8063 (  0%)
+      # codes of length 11 bits:     4059 (  0%)
+      # codes of length 12 bits:     1334 (  0%)
+      # codes of length 13 bits:      802 (  0%)
+      # codes of length 14 bits:        0 (  0%)
+      # codes of length 15 bits:        0 (  0%)
+      # codes of length 16 bits:      503 (  0%)
+
+  YCC clipping in DC:
+    Y  component: [<0=    7] [>255=    3]
+    Cb component: [<0=    0] [>255=    0]
+    Cr component: [<0=    0] [>255=    0]
+
+  YCC histogram in DC (DCT sums : pre-ranged:
+    Y  component histo: [min=-1046 max= 1033 avg=   29.7]
+    Cb component histo: [min= -737 max=  403 avg=   44.7]
+    Cr component histo: [min= -615 max=  580 avg=    0.9]
+
+  YCC histogram in DC:
+    Y  component histo: [min=   -2 max=  257 avg=   27.9]
+    Cb component histo: [min=    0 max=  178 avg=   41.2]
+    Cr component histo: [min=    0 max=  200 avg=   24.3]
+
+  RGB histogram in DC (before clip):
+    R  component histo: [min=   -9 max=  261 avg=   10.8]
+    G  component histo: [min=   -3 max=  256 avg=   34.0]
+    B  component histo: [min=  -14 max=  264 avg=   36.6]
+
+  RGB clipping in DC:
+    R  component: [<0=172877] [>255=  812]
+    G  component: [<0=   93] [>255=   30]
+    B  component: [<0=1042011] [>255=50795]
+
+  RGB histogram in DC (after clip):
+    R  component histo: [min=    0 max=  255 avg=   10.8]
+    G  component histo: [min=    0 max=  255 avg=   34.0]
+    B  component histo: [min=    0 max=  255 avg=   36.6]
+
+  Average Pixel Luminance (Y):
+    Y=[ 27] (range: 0..255)
+
+  Brightest Pixel Search:
+    YCC=[ 1033,  -15,   -8] RGB=[253,255,251] @ MCU[558,227]
+
+  Finished Decoding SCAN Data
+    Number of RESTART markers decoded: 697
+    Next position in scan buffer: Offset 0x009E49E8.2
+
+ 
+*** Marker: EOI (End of Image) (xFFD9) ***
+  OFFSET: 0x009E49E9
+
+
+*** Embedded JPEG Thumbnail ***
+  Offset: 0x000003D6
+  Length: 0x000037BB (14267)
+
+  * Embedded Thumb Marker: SOI
+
+  * Embedded Thumb Marker: DQT
+    Length = 132
+    ----
+    Precision=8 bits
+    Destination ID=0 (Luminance, typically)
+      DQT, Row #0:   6   4   4   6   9  11  12  16 
+      DQT, Row #1:   4   5   5   6   8  10  12  12 
+      DQT, Row #2:   4   5   5   6  10  12  12  12 
+      DQT, Row #3:   6   6   6  11  12  12  12  12 
+      DQT, Row #4:   9   8  10  12  12  12  12  12 
+      DQT, Row #5:  11  10  12  12  12  12  12  12 
+      DQT, Row #6:  12  12  12  12  12  12  12  12 
+      DQT, Row #7:  16  12  12  12  12  12  12  12 
+    ----
+    Precision=8 bits
+    Destination ID=1 (Chrominance, typically)
+      DQT, Row #0:   7   7  13  24  20  20  17  17 
+      DQT, Row #1:   7  12  16  14  14  12  12  12 
+      DQT, Row #2:  13  16  14  14  12  12  12  12 
+      DQT, Row #3:  24  14  14  12  12  12  12  12 
+      DQT, Row #4:  20  14  12  12  12  12  12  12 
+      DQT, Row #5:  20  12  12  12  12  12  12  12 
+      DQT, Row #6:  17  12  12  12  12  12  12  12 
+      DQT, Row #7:  17  12  12  12  12  12  12  12 
+
+  * Embedded Thumb Marker: DRI
+    Length = 4
+
+  * Embedded Thumb Marker: APP14
+    Length = 14
+
+  * Embedded Thumb Marker: SOF
+    Frame header length = 17
+    Precision = 8
+    Number of Lines = 171
+    Samples per Line = 256
+    Image Size = 256 x 171
+
+  * Embedded Thumb Marker: DHT
+    Length = 418
+
+  * Embedded Thumb Marker: SOS
+    Skipping scan data
+    Skipped 13644 bytes
+
+  * Embedded Thumb Marker: EOI
+
+  * Embedded Thumb Signature: 01180AF3DE63318828A86409EF4013DD
+
+*** Searching Compression Signatures ***
+
+  Signature:           014C6C24A9EE0C6BDCC1598CEECCE808
+  Signature (Rotated): 014C6C24A9EE0C6BDCC1598CEECCE808
+  File Offset:         0 bytes
+  Chroma subsampling:  1x1
+  EXIF Make/Model:     OK   [Panasonic] [DC-S1R]
+  EXIF Makernotes:     NONE
+  EXIF Software:       OK   [Adobe Photoshop Camera Raw 12.4 (Macintosh)]
+
+  Searching Compression Signatures: (3347 built-in, 0 user(*) )
+
+          EXIF.Make / Software        EXIF.Model                            Quality           Subsamp Match?
+          -------------------------   -----------------------------------   ----------------  --------------
+     SW :[Adobe Photoshop          ]                                       [Save As 11      ]                  
+
+  NOTE: EXIF Software field recognized as from editor
+  Based on the analysis of compression characteristics and EXIF metadata:
+
+  ASSESSMENT: Class 1 - Image is processed/edited
+
+

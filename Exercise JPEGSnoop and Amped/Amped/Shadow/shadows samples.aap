@@ -1,0 +1,1867 @@
+{
+   "Name" : "Amped Authenticate Project",
+   "Version" : "1.0",
+   "Properties" : {
+      "Case" : "Shadows filter showcase",
+      "Author" : "",
+      "Description" : "",
+      "Report Max Image Width" : 600,
+      "Report Min Image Width" : 0
+   },
+   "Bookmarks" : [
+      {
+         "Id" : 9,
+         "Name" : "Shadows - Feasible Solution",
+         "Description" : "All constraints are consistent, meaning that there exist a region that is common to all the wedges defined by constraints (i.e., the system is feasible)",
+         "Level" : 1,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "indoor_back.jpg",
+            "Hash" : "07412154daec9d77df6445b0400035d2"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "Shadows",
+         "Parameters" : {
+         },
+         "PostProcessingParameters" : {
+         },
+         "FilterJsonData" : {
+            "Project Version" : 1,
+            "Geometric Methods" : {
+               "Shadows Consistency Analysis" : {
+                  "Attached Shadow Constraints" : [
+                     {
+                        "Points" : [
+                           [
+                              856,
+                              454
+                           ],
+                           [
+                              848,
+                              441
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              647,
+                              429
+                           ],
+                           [
+                              641,
+                              415
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     }
+                  ],
+                  "Cast Shadow Constraints" : [
+                     {
+                        "Points" : [
+                           [
+                              917,
+                              382
+                           ],
+                           [
+                              709,
+                              221
+                           ],
+                           [
+                              702,
+                              289
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              915,
+                              433
+                           ],
+                           [
+                              690,
+                              280
+                           ],
+                           [
+                              727,
+                              228
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              646,
+                              207
+                           ],
+                           [
+                              471,
+                              64
+                           ],
+                           [
+                              431,
+                              72
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              634,
+                              257
+                           ],
+                           [
+                              429,
+                              83
+                           ],
+                           [
+                              393,
+                              97
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              675,
+                              359
+                           ],
+                           [
+                              495,
+                              193
+                           ],
+                           [
+                              471,
+                              208
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              634,
+                              397
+                           ],
+                           [
+                              480,
+                              243
+                           ],
+                           [
+                              432,
+                              238
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              412,
+                              258
+                           ],
+                           [
+                              255,
+                              86
+                           ],
+                           [
+                              225,
+                              97
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              425,
+                              331
+                           ],
+                           [
+                              207,
+                              78
+                           ],
+                           [
+                              192,
+                              84
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              305,
+                              324
+                           ],
+                           [
+                              156,
+                              124
+                           ],
+                           [
+                              141,
+                              143
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              322,
+                              451
+                           ],
+                           [
+                              209,
+                              283
+                           ],
+                           [
+                              181,
+                              295
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              202,
+                              501
+                           ],
+                           [
+                              113,
+                              355
+                           ],
+                           [
+                              126,
+                              337
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              678,
+                              668
+                           ],
+                           [
+                              440,
+                              386
+                           ],
+                           [
+                              421,
+                              399
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              585,
+                              744
+                           ],
+                           [
+                              332,
+                              433
+                           ],
+                           [
+                              364,
+                              435
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              942,
+                              509
+                           ],
+                           [
+                              856,
+                              424
+                           ],
+                           [
+                              827,
+                              453
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              864,
+                              529
+                           ],
+                           [
+                              809,
+                              483
+                           ],
+                           [
+                              818,
+                              440
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     }
+                  ],
+                  "GUI Settings" : {
+                     "Constraints Mode" : 1,
+                     "Show Feasible Wedge" : false,
+                     "Show Constraints Areas" : true
+                  }
+               }
+            }
+         },
+         "status" : "OK"
+      },
+      {
+         "Id" : 7,
+         "Name" : "Shadows - Feasible Solution 1",
+         "Description" : "All constraints are consistent, meaning that there exist a region that is common to all the wedges defined by constraints (i.e., the system is feasible)",
+         "Level" : 1,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "indoor_front.jpg",
+            "Hash" : "db607b07ffe15866b2001e4e3e1abdcb"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "Shadows",
+         "Parameters" : {
+         },
+         "PostProcessingParameters" : {
+         },
+         "FilterJsonData" : {
+            "Project Version" : 1,
+            "Geometric Methods" : {
+               "Shadows Consistency Analysis" : {
+                  "Cast Shadow Constraints" : [
+                     {
+                        "Points" : [
+                           [
+                              912,
+                              605
+                           ],
+                           [
+                              767,
+                              573
+                           ],
+                           [
+                              786,
+                              729
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              990,
+                              447
+                           ],
+                           [
+                              867,
+                              446
+                           ],
+                           [
+                              856,
+                              385
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              764,
+                              355
+                           ],
+                           [
+                              713,
+                              393
+                           ],
+                           [
+                              699,
+                              325
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              750,
+                              343
+                           ],
+                           [
+                              698,
+                              329
+                           ],
+                           [
+                              721,
+                              399
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              640,
+                              363
+                           ],
+                           [
+                              560,
+                              361
+                           ],
+                           [
+                              557,
+                              343
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              584,
+                              365
+                           ],
+                           [
+                              507,
+                              355
+                           ],
+                           [
+                              507,
+                              345
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              635,
+                              455
+                           ],
+                           [
+                              562,
+                              446
+                           ],
+                           [
+                              562,
+                              438
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              420,
+                              470
+                           ],
+                           [
+                              296,
+                              457
+                           ],
+                           [
+                              295,
+                              443
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              564,
+                              563
+                           ],
+                           [
+                              315,
+                              546
+                           ],
+                           [
+                              320,
+                              523
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              1137,
+                              202
+                           ],
+                           [
+                              1099,
+                              196
+                           ],
+                           [
+                              1098,
+                              188
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     }
+                  ],
+                  "GUI Settings" : {
+                     "Constraints Mode" : 1,
+                     "Show Feasible Wedge" : true,
+                     "Show Constraints Areas" : true
+                  }
+               }
+            }
+         },
+         "status" : "OK"
+      },
+      {
+         "Id" : 4,
+         "Name" : "Shadows - Feasible Solution 2",
+         "Description" : "All constraints are consistent, meaning that there exist a region that is common to all the wedges defined by constraints (i.e., the system is feasible)",
+         "Level" : 1,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "indoor_back_2.jpg",
+            "Hash" : "74a93a67381a2c87b2e20f956d310b1f"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "Shadows",
+         "Parameters" : {
+         },
+         "PostProcessingParameters" : {
+         },
+         "FilterJsonData" : {
+            "Project Version" : 1,
+            "Geometric Methods" : {
+               "Shadows Consistency Analysis" : {
+                  "Cast Shadow Constraints" : [
+                     {
+                        "Points" : [
+                           [
+                              279,
+                              525
+                           ],
+                           [
+                              170,
+                              535
+                           ],
+                           [
+                              187,
+                              552
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              224,
+                              582
+                           ],
+                           [
+                              181,
+                              590
+                           ],
+                           [
+                              186,
+                              596
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              335,
+                              665
+                           ],
+                           [
+                              284,
+                              673
+                           ],
+                           [
+                              292,
+                              685
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              348,
+                              665
+                           ],
+                           [
+                              286,
+                              672
+                           ],
+                           [
+                              290,
+                              684
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              677,
+                              613
+                           ],
+                           [
+                              566,
+                              623
+                           ],
+                           [
+                              570,
+                              634
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              720,
+                              674
+                           ],
+                           [
+                              628,
+                              685
+                           ],
+                           [
+                              634,
+                              706
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              699,
+                              713
+                           ],
+                           [
+                              641,
+                              716
+                           ],
+                           [
+                              641,
+                              730
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              658,
+                              744
+                           ],
+                           [
+                              611,
+                              737
+                           ],
+                           [
+                              622,
+                              758
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              670,
+                              390
+                           ],
+                           [
+                              616,
+                              395
+                           ],
+                           [
+                              620,
+                              409
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              719,
+                              241
+                           ],
+                           [
+                              679,
+                              240
+                           ],
+                           [
+                              678,
+                              251
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              751,
+                              234
+                           ],
+                           [
+                              704,
+                              240
+                           ],
+                           [
+                              707,
+                              248
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              459,
+                              247
+                           ],
+                           [
+                              377,
+                              258
+                           ],
+                           [
+                              377,
+                              270
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              911,
+                              399
+                           ],
+                           [
+                              867,
+                              412
+                           ],
+                           [
+                              863,
+                              409
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              614,
+                              398
+                           ],
+                           [
+                              563,
+                              402
+                           ],
+                           [
+                              566,
+                              409
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              1061,
+                              203
+                           ],
+                           [
+                              1028,
+                              206
+                           ],
+                           [
+                              1031,
+                              211
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              1056,
+                              81
+                           ],
+                           [
+                              1026,
+                              89
+                           ],
+                           [
+                              1024,
+                              85
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     }
+                  ],
+                  "GUI Settings" : {
+                     "Constraints Mode" : 1,
+                     "Show Feasible Wedge" : false,
+                     "Show Constraints Areas" : true
+                  }
+               }
+            }
+         },
+         "status" : "OK"
+      },
+      {
+         "Id" : 3,
+         "Name" : "Shadows - Feasible Solution 3",
+         "Description" : "All constraints are consistent, meaning that there exist a region that is common to all the wedges defined by constraints (i.e., the system is feasible)",
+         "Level" : 1,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "garden.jpg",
+            "Hash" : "f119c421d53498437418b462f43f6994"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "Shadows",
+         "Parameters" : {
+         },
+         "PostProcessingParameters" : {
+         },
+         "FilterJsonData" : {
+            "Project Version" : 1,
+            "Geometric Methods" : {
+               "Shadows Consistency Analysis" : {
+                  "Cast Shadow Constraints" : [
+                     {
+                        "Points" : [
+                           [
+                              595,
+                              179
+                           ],
+                           [
+                              561,
+                              16
+                           ],
+                           [
+                              540,
+                              14
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              831,
+                              809
+                           ],
+                           [
+                              774,
+                              605
+                           ],
+                           [
+                              786,
+                              601
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              271,
+                              735
+                           ],
+                           [
+                              227,
+                              606
+                           ],
+                           [
+                              237,
+                              601
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              379,
+                              631
+                           ],
+                           [
+                              369,
+                              603
+                           ],
+                           [
+                              375,
+                              575
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              293,
+                              625
+                           ],
+                           [
+                              279,
+                              592
+                           ],
+                           [
+                              295,
+                              581
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              829,
+                              646
+                           ],
+                           [
+                              806,
+                              582
+                           ],
+                           [
+                              821,
+                              574
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              810,
+                              647
+                           ],
+                           [
+                              795,
+                              604
+                           ],
+                           [
+                              806,
+                              590
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              665,
+                              641
+                           ],
+                           [
+                              653,
+                              612
+                           ],
+                           [
+                              660,
+                              599
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              1107,
+                              654
+                           ],
+                           [
+                              1094,
+                              608
+                           ],
+                           [
+                              1101,
+                              600
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              195,
+                              292
+                           ],
+                           [
+                              165,
+                              193
+                           ],
+                           [
+                              178,
+                              178
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              363,
+                              243
+                           ],
+                           [
+                              339,
+                              179
+                           ],
+                           [
+                              352,
+                              172
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              495,
+                              164
+                           ],
+                           [
+                              460,
+                              71
+                           ],
+                           [
+                              474,
+                              70
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              473,
+                              171
+                           ],
+                           [
+                              439,
+                              85
+                           ],
+                           [
+                              451,
+                              73
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     }
+                  ],
+                  "GUI Settings" : {
+                     "Constraints Mode" : 1,
+                     "Show Feasible Wedge" : false,
+                     "Show Constraints Areas" : true
+                  }
+               }
+            }
+         },
+         "status" : "OK"
+      },
+      {
+         "Id" : 6,
+         "Name" : "Shadows - Feasible Inverted",
+         "Description" : "All constraints are consistent, meaning that there exist a region that is common to all the wedges defined by constraints (i.e., the system is feasible). Noticeably, in this case the intersection is obtained in the reverse side of user-defined wedges. This is reflected by the \"Inverted: Yes\" information in the bottom filter panel.",
+         "Level" : 1,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "outdoor_back_2.jpg",
+            "Hash" : "b4f660b1b304b89e8869f35b5dc08000"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "Shadows",
+         "Parameters" : {
+         },
+         "PostProcessingParameters" : {
+         },
+         "FilterJsonData" : {
+            "Project Version" : 1,
+            "Geometric Methods" : {
+               "Shadows Consistency Analysis" : {
+                  "Cast Shadow Constraints" : [
+                     {
+                        "Points" : [
+                           [
+                              482,
+                              717
+                           ],
+                           [
+                              557,
+                              637
+                           ],
+                           [
+                              565,
+                              654
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              672,
+                              932
+                           ],
+                           [
+                              848,
+                              814
+                           ],
+                           [
+                              853,
+                              838
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              656,
+                              798
+                           ],
+                           [
+                              849,
+                              648
+                           ],
+                           [
+                              850,
+                              666
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              394,
+                              627
+                           ],
+                           [
+                              472,
+                              529
+                           ],
+                           [
+                              477,
+                              547
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              386,
+                              636
+                           ],
+                           [
+                              454,
+                              552
+                           ],
+                           [
+                              458,
+                              562
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              389,
+                              606
+                           ],
+                           [
+                              431,
+                              545
+                           ],
+                           [
+                              436,
+                              559
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              315,
+                              567
+                           ],
+                           [
+                              358,
+                              501
+                           ],
+                           [
+                              365,
+                              506
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              329,
+                              578
+                           ],
+                           [
+                              379,
+                              499
+                           ],
+                           [
+                              388,
+                              506
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              472,
+                              663
+                           ],
+                           [
+                              570,
+                              552
+                           ],
+                           [
+                              578,
+                              570
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              477,
+                              675
+                           ],
+                           [
+                              550,
+                              589
+                           ],
+                           [
+                              561,
+                              594
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     }
+                  ],
+                  "GUI Settings" : {
+                     "Constraints Mode" : 1,
+                     "Show Feasible Wedge" : true,
+                     "Show Constraints Areas" : true
+                  }
+               }
+            }
+         },
+         "status" : "OK"
+      },
+      {
+         "Id" : 2,
+         "Name" : "Shadows - Feasible Inverted 1",
+         "Description" : "All constraints are consistent, meaning that there exist a region that is common to all the wedges defined by constraints (i.e., the system is feasible). Noticeably, in this case the intersection is obtained in the reverse side of user-defined wedges. This is reflected by the \"Inverted: Yes\" information in the bottom filter panel.",
+         "Level" : 1,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "outdoor_back.jpg",
+            "Hash" : "0d2370fd48f264824dfbc0ab390cd124"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "Shadows",
+         "Parameters" : {
+         },
+         "PostProcessingParameters" : {
+         },
+         "FilterJsonData" : {
+            "Project Version" : 1,
+            "Geometric Methods" : {
+               "Shadows Consistency Analysis" : {
+                  "Cast Shadow Constraints" : [
+                     {
+                        "Points" : [
+                           [
+                              269,
+                              523
+                           ],
+                           [
+                              255,
+                              445
+                           ],
+                           [
+                              277,
+                              452
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              492,
+                              414
+                           ],
+                           [
+                              495,
+                              388
+                           ],
+                           [
+                              479,
+                              382
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              556,
+                              756
+                           ],
+                           [
+                              558,
+                              687
+                           ],
+                           [
+                              611,
+                              701
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              906,
+                              713
+                           ],
+                           [
+                              919,
+                              651
+                           ],
+                           [
+                              933,
+                              679
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              1027,
+                              697
+                           ],
+                           [
+                              1039,
+                              660
+                           ],
+                           [
+                              1050,
+                              676
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              71,
+                              810
+                           ],
+                           [
+                              56,
+                              768
+                           ],
+                           [
+                              93,
+                              759
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     }
+                  ],
+                  "GUI Settings" : {
+                     "Constraints Mode" : 1,
+                     "Show Feasible Wedge" : true,
+                     "Show Constraints Areas" : true
+                  }
+               }
+            }
+         },
+         "status" : "OK"
+      },
+      {
+         "Id" : 0,
+         "Name" : "Shadows - Unfeasible Solution",
+         "Description" : "In this image there is no region that is common to all wedges, so the system is unfeasible. By turning off the orange's contraints the system becomes feasible, which suggests that the orange has been manipulated.",
+         "Level" : 1,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "indoor_fake.jpg",
+            "Hash" : "6e49dacac09a93611de9dfe3dc5f48b0"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "Shadows",
+         "Parameters" : {
+         },
+         "PostProcessingParameters" : {
+         },
+         "FilterJsonData" : {
+            "Project Version" : 1,
+            "Geometric Methods" : {
+               "Shadows Consistency Analysis" : {
+                  "Attached Shadow Constraints" : [
+                     {
+                        "Points" : [
+                           [
+                              148,
+                              285
+                           ],
+                           [
+                              142,
+                              271
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              337,
+                              608
+                           ],
+                           [
+                              326,
+                              597
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     }
+                  ],
+                  "Cast Shadow Constraints" : [
+                     {
+                        "Points" : [
+                           [
+                              645,
+                              207
+                           ],
+                           [
+                              467,
+                              62
+                           ],
+                           [
+                              418,
+                              116
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              421,
+                              329
+                           ],
+                           [
+                              186,
+                              78
+                           ],
+                           [
+                              200,
+                              69
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              478,
+                              683
+                           ],
+                           [
+                              344,
+                              566
+                           ],
+                           [
+                              303,
+                              648
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              674,
+                              668
+                           ],
+                           [
+                              440,
+                              383
+                           ],
+                           [
+                              399,
+                              429
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              917,
+                              382
+                           ],
+                           [
+                              691,
+                              205
+                           ],
+                           [
+                              679,
+                              255
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              673,
+                              359
+                           ],
+                           [
+                              489,
+                              186
+                           ],
+                           [
+                              491,
+                              229
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     }
+                  ],
+                  "GUI Settings" : {
+                     "Constraints Mode" : 2,
+                     "Show Feasible Wedge" : true,
+                     "Show Constraints Areas" : true
+                  }
+               }
+            }
+         },
+         "status" : "Warning"
+      },
+      {
+         "Id" : 1,
+         "Name" : "Shadows - Min. Unfeasible Set",
+         "Description" : "Showing the minimun unfeasible set confirms that the orange is likely the problematic object in this scene.",
+         "Level" : 1,
+         "isFolder" : false,
+         "hidePostProcParams" : 0,
+         "evidence" : {
+            "Name" : "indoor_fake.jpg",
+            "Hash" : "6e49dacac09a93611de9dfe3dc5f48b0"
+         },
+         "reference" : {
+            "Name" : "",
+            "Hash" : ""
+         },
+         "filter" : "Shadows",
+         "Parameters" : {
+         },
+         "PostProcessingParameters" : {
+         },
+         "FilterJsonData" : {
+            "Project Version" : 1,
+            "Geometric Methods" : {
+               "Shadows Consistency Analysis" : {
+                  "Attached Shadow Constraints" : [
+                     {
+                        "Points" : [
+                           [
+                              148,
+                              285
+                           ],
+                           [
+                              142,
+                              271
+                           ]
+                        ],
+                        "Enabled" : false,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              337,
+                              608
+                           ],
+                           [
+                              326,
+                              597
+                           ]
+                        ],
+                        "Enabled" : false,
+                        "Consistent" : true
+                     }
+                  ],
+                  "Cast Shadow Constraints" : [
+                     {
+                        "Points" : [
+                           [
+                              645,
+                              207
+                           ],
+                           [
+                              467,
+                              62
+                           ],
+                           [
+                              418,
+                              116
+                           ]
+                        ],
+                        "Enabled" : false,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              421,
+                              329
+                           ],
+                           [
+                              186,
+                              78
+                           ],
+                           [
+                              200,
+                              69
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              478,
+                              683
+                           ],
+                           [
+                              344,
+                              566
+                           ],
+                           [
+                              303,
+                              648
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              674,
+                              668
+                           ],
+                           [
+                              440,
+                              383
+                           ],
+                           [
+                              399,
+                              429
+                           ]
+                        ],
+                        "Enabled" : false,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              917,
+                              382
+                           ],
+                           [
+                              691,
+                              205
+                           ],
+                           [
+                              679,
+                              255
+                           ]
+                        ],
+                        "Enabled" : true,
+                        "Consistent" : true
+                     },
+                     {
+                        "Points" : [
+                           [
+                              673,
+                              359
+                           ],
+                           [
+                              489,
+                              186
+                           ],
+                           [
+                              491,
+                              229
+                           ]
+                        ],
+                        "Enabled" : false,
+                        "Consistent" : true
+                     }
+                  ],
+                  "GUI Settings" : {
+                     "Constraints Mode" : 2,
+                     "Show Feasible Wedge" : true,
+                     "Show Constraints Areas" : true
+                  }
+               }
+            }
+         },
+         "status" : "Warning"
+      }
+   ]
+}
